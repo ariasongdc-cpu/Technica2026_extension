@@ -29,9 +29,21 @@ button.addEventListener("click", async () => {
     }
 
     const data = await response.json();
+    const text = JSON.stringify(data, null, 2);
 
-    status.textContent = "Data retrieved! Here's the raw response:";
-    result.textContent = JSON.stringify(data, null, 2);
+    result.textContent = text;
+
+    const saveResponse = await fetch("http://localhost:3000/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: text
+    });
+
+    if (!saveResponse.ok) {
+      throw new Error("Could not save check.json");
+    }
+
+    status.textContent = "Saved check.json in the project folder.";
     console.log(data);
   } catch (error) {
     status.textContent = "Couldn't retrieve the data.";
