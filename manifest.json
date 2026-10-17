@@ -1,6 +1,4 @@
-
 {
-  "permissions": ["downloads"],
   "manifest_version": 3,
   "name": "TerpWhisper",
   "version": "1.0.0",
@@ -13,15 +11,15 @@
       "128": "icons/star.png"
     }
   },
-
   "icons": {
     "16": "icons/star.png",
     "48": "icons/star.png",
     "128": "icons/star.png"
   },
-  
+  "permissions": ["downloads"],
   "host_permissions": [
     "https://planetterp.com/*",
-    "http://localhost:3000/*"
+    "http://localhost:3000/*",
+    "http://127.0.0.1:3000/*"
   ]
 }
