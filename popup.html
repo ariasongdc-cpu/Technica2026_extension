@@ -56,10 +56,10 @@
     button {
       background: radial-gradient(
         circle,
-        #e672b0 0%,
+        #dd67a6 0%,
         #a6cf96 90%
       );
-      color: rgb(74, 7, 74);
+      color: rgb(255, 255, 255);
       border: none;
       cursor: pointer;
       font-family: "Gochi Hand";
@@ -90,9 +90,10 @@
     }
 
     .summary-card h2 {
-      font-size: 20px;
+      font-size: 19px;
       margin-top: 0;
       margin-bottom: 8px;
+      font-family: "Georgia", serif;
     }
 
     .summary-card p {
@@ -170,31 +171,23 @@
   <button id="analyze">analyze reviews</button>
 
   <div class="summary-card avg">
-    <h2>⭒ Average Rating</h2>
-    <p id="averageRating">
-      The average rating will appear here.
-    </p>
+    <h2>⭒ Overall Sentiment</h2>
+    <p id="sentimentSummary">Analyzing consensus...</p>
   </div>
 
   <div class="summary-card positive">
-    <h2>⭒ The Good Stuff</h2>
-    <p id="positiveSummary">
-      The positive summary will appear here.
-    </p>
+    <h2>⭒ Key Strengths</h2>
+    <p id="strengthsSummary">Analyzing strengths...</p>
   </div>
-
+    
   <div class="summary-card negative">
-    <h2>⭒ The Not-So-Good Stuff</h2>
-    <p id="negativeSummary">
-      The negative summary will appear here.
-    </p>
+    <h2>⭒ Common Pitfalls & Challenges</h2>
+    <p id="pitfallsSummary">Analyzing challenges...</p>
   </div>
 
   <div class="summary-card mixed">
-    <h2>⭒ The Mixed Info</h2>
-    <p id="mixedSummary">
-      The mixed info will appear here.
-    </p>
+    <h2>⭒ Actionable Advice</h2>
+    <p id="adviceSummary">Analyzing advice...</p>
   </div>
 
   <div class="summary-card-initial greeting">
