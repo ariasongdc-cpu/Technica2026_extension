@@ -1,7 +1,6 @@
 const button = document.getElementById("analyze");
 const nameInput = document.getElementById("professorName");
 const status = document.getElementById("status");
-const result = document.getElementById("result");
 
 button.addEventListener("click", async () => {
   const name = nameInput.value.trim();
@@ -11,13 +10,15 @@ button.addEventListener("click", async () => {
     return;
   }
 
+  // Display cards and hide greeting
   document.querySelectorAll(".summary-card").forEach((card) => {
     card.style.display = "block";
   });
-  document.querySelector(".summary-card-initial").style.display = "none";
+  const initialCard = document.querySelector(".summary-card-initial");
+  if (initialCard) initialCard.style.display = "none";
 
-  setStatus("Fetching professor data...");
-  setResult("");
+  setStatus("Fetching reviews from PlanetTerp...");
+  resetCards();
 
   try {
     const params = new URLSearchParams({
@@ -30,36 +31,46 @@ button.addEventListener("click", async () => {
     );
 
     if (!response.ok) {
-      throw new Error(`PlanetTerp request failed: ${response.status}`);
+      throw new Error(`PlanetTerp error: ${response.statusText || response.status}`);
     }
 
     const data = await response.json();
-
-    if (data.error) {
-      throw new Error(data.error);
-    }
+    if (data.error) throw new Error(data.error);
 
     const cleaned = cleanProfessor(data);
-    const text = JSON.stringify(cleaned, null, 2);
+    setStatus("Generating AI summary with Gemini (approx. 3-5s)...");
 
-    fillCards(cleaned);
-    setResult(text);
-    setStatus("Saving check.json...");
-
+    // Send to local server
     const saveResponse = await fetch("http://127.0.0.1:3000/save", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: text
+      body: JSON.stringify(cleaned, null, 2)
     });
 
     if (!saveResponse.ok) {
-      throw new Error("The save server refused the file.");
+      throw new Error(`Server returned HTTP ${saveResponse.status}`);
     }
 
-    setStatus("Saved organized check.json in the project folder.");
+    const serverData = await saveResponse.json();
+
+    if (serverData.error) {
+      throw new Error(serverData.error);
+    }
+
+    const summaryText = serverData.summary || "";
+
+    // If Gemini returned an error string instead of a summary
+    if (summaryText.startsWith("Error")) {
+      throw new Error(summaryText);
+    }
+
+    // Populate cards
+    fillCards(cleaned, summaryText);
+    setStatus("Analysis complete!");
   } catch (error) {
-    setStatus("Couldn't retrieve the data.");
-    setResult(error.message);
+    console.error(error);
+    setStatus(`Error: ${error.message}`);
+    document.getElementById("sentimentSummary").textContent = `Error: ${error.message}`;
   }
 });
 
@@ -67,27 +78,66 @@ function setStatus(message) {
   if (status) status.textContent = message;
 }
 
-function setResult(message) {
-  if (result) result.textContent = message;
+function resetCards() {
+  document.getElementById("sentimentSummary").textContent = "Analyzing overall sentiment...";
+  document.getElementById("strengthsSummary").textContent = "Analyzing key strengths...";
+  document.getElementById("pitfallsSummary").textContent = "Analyzing common pitfalls...";
+  document.getElementById("adviceSummary").textContent = "Analyzing actionable advice...";
 }
 
-function fillCards(cleaned) {
-  document.getElementById("averageRating").textContent =
-    `${cleaned.name}: ${cleaned.average_rating} stars from ${cleaned.review_count} reviews.`;
+function parseGeminiSummary(text) {
+  if (!text) return {};
 
-  const best = [...cleaned.courses].sort((a, b) => b.avg - a.avg)[0];
-  const worst = [...cleaned.courses].sort((a, b) => a.avg - b.avg)[0];
+  const clean = (str) =>
+    str
+      .replace(/^\s*(?:#+|\d+\.|\*+)*\s*(?:Overall Sentiment|Key Strengths|Common Pitfalls|Challenges|Actionable Advice)[^\n:]*[:\-]?\s*/i, "")
+      .trim();
 
-  document.getElementById("positiveSummary").textContent = best
-    ? `${best.course} has the highest average, ${best.avg}, from ${best.count} reviews.`
-    : "No course ratings yet.";
+  const getSection = (startRegex, endRegex) => {
+    const regex = new RegExp(`${startRegex}[\\s\\S]*?(?=${endRegex}|$)`, "i");
+    const match = text.match(regex);
+    return match ? clean(match[0]) : "";
+  };
 
-  document.getElementById("negativeSummary").textContent = worst
-    ? `${worst.course} has the lowest average, ${worst.avg}, from ${worst.count} reviews.`
-    : "No course ratings yet.";
+  const sentiment = getSection("(?:1\\.|#+|\\*\\*).*?Overall Sentiment", "(?:2\\.|#+|\\*\\*).*?Key Strengths");
+  const strengths = getSection("(?:2\\.|#+|\\*\\*).*?Key Strengths", "(?:3\\.|#+|\\*\\*).*?(?:Common Pitfalls|Challenges)");
+  const pitfalls  = getSection("(?:3\\.|#+|\\*\\*).*?(?:Common Pitfalls|Challenges)", "(?:4\\.|#+|\\*\\*).*?Actionable Advice");
+  const advice    = getSection("(?:4\\.|#+|\\*\\*).*?Actionable Advice", "$");
 
-  document.getElementById("mixedSummary").textContent =
-    "check.json has the 30 newest reviews ready for the Gemini summary.";
+  // Fallback: if regex missed headers, divide into paragraph blocks
+  const blocks = text.split(/\n\s*\n+/).map((b) => b.trim()).filter(Boolean);
+
+  return {
+    sentiment: sentiment || blocks[0] || "",
+    strengths: strengths || blocks[1] || "",
+    pitfalls:  pitfalls  || blocks[2] || "",
+    advice:    advice    || blocks[3] || ""
+  };
+}
+
+function fillCards(cleaned, summaryText) {
+  const sections = parseGeminiSummary(summaryText);
+
+  // 1. Overall Sentiment card
+  const metaHeader = `${cleaned.name} (${cleaned.average_rating ?? "N/A"} ⭐ across ${cleaned.review_count} reviews)`;
+  document.getElementById("sentimentSummary").textContent = [
+    metaHeader,
+    sections.sentiment || "No consensus text found."
+  ]
+    .filter(Boolean)
+    .join("\n\n");
+
+  // 2. Key Strengths card
+  document.getElementById("strengthsSummary").textContent =
+    sections.strengths || "No key strengths reported.";
+
+  // 3. Common Pitfalls & Challenges card
+  document.getElementById("pitfallsSummary").textContent =
+    sections.pitfalls || "No major pitfalls reported.";
+
+  // 4. Actionable Advice card
+  document.getElementById("adviceSummary").textContent =
+    sections.advice || "No specific advice reported.";
 }
 
 function cleanProfessor(data) {
@@ -121,18 +171,16 @@ function cleanProfessor(data) {
     .sort((a, b) => b.count - a.count);
 
   const recentReviews = reviews.slice(0, 30).map((review) => ({
-    created: review.created.slice(0, 10),
+    created: review.created ? review.created.slice(0, 10) : "",
     course: review.course,
     rating: review.rating,
     review: review.review
   }));
 
-  const rating = data.average_rating;
-
   return {
     name: data.name,
     slug: data.slug,
-    average_rating: rating == null ? null : Math.round(rating * 100) / 100,
+    average_rating: data.average_rating == null ? null : Math.round(data.average_rating * 100) / 100,
     review_count: reviews.length,
     courses: courses,
     recent_reviews: recentReviews

@@ -1,0 +1,21 @@
+Here is an academic advising analysis based on the student reviews for Professor Salman Safdar:
+
+**Overall Sentiment**
+Student sentiment is mixed to moderately positive (3.5/5 rating). While students appreciate his approachable demeanor, leniency with deadlines, and responsiveness to feedback, they frequently cite significant logistical hurdles. Experiences range from very positive to frustrating, largely depending on the course and how severely his organizational habits and slow grading impacted the student.
+
+**Key Strengths**
+* **Approachable and Receptive:** Highly willing to answer questions, stay after class to clarify confusing concepts, and adjust course policies based on student feedback.
+* **Flexibility and Fairness:** Very forgiving with assignment deadlines and willing to regrade or adjust points if students advocate for themselves.
+* **Predictable Exams:** Midterms and finals closely mirror provided review materials and the UMD Mathematics Department past exam archives (testbank).
+
+**Common Pitfalls / Challenges**
+* **Course Organization and Canvas:** Tends to be disorganized with online platforms, assignment schedules, and lecture pacing (occasionally cramming topics right before exams).
+* **Delayed Grading:** Students—particularly in MATH240—experienced major delays in receiving feedback on homework, MATLAB assignments, quizzes, and exams.
+* **TA Disconnect:** A lack of communication between the instructor and teaching assistants can result in harsh, nitpicky grading that contradicts instructions given during lecture.
+* **Time-Pressured In-Class Work:** In some sections (e.g., MATH310), students reported rushed group work or quizzes administered in the final 15 minutes on material that had just been introduced.
+
+**Actionable Advice for Students**
+* **Leverage the Math Testbank:** Prepare for exams by working through past UMD department finals and the professor's review guides, as exam questions frequently resemble these resources.
+* **Advocate for Your Grades Directly:** If a TA grades an assignment harshly or ignores instructions given in lecture, visit Professor Safdar during office hours or after class—he is open to adjusting points.
+* **Supplement Lecture with Independent Study:** Rely on the course textbook and external resources to maintain a steady study pace, particularly if lecture flow becomes disorganized.
+* **Proactively Track Your Standing:** Because grades may not be updated promptly on Canvas, keep a personal log of your scores and clarify your standing with him well before the drop/withdrawal deadlines.
