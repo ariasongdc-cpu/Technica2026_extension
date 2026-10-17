@@ -4,18 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terp Insight</title>
+  
   <style>
+    @font-face {
+      font-family: "GochiHand";
+      src: url("fonts/GochiHand-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Gochi Hand";
       width: 340px;
-      padding: 16px;
-      background: #fff8fc;
-      color: #302333;
+      padding: 14px;
+     background:
+      radial-gradient(
+        ellipse at 50% 50%,
+        #afb9e8 0%,
+        transparent 35%
+      ),
+      radial-gradient(
+        ellipse,
+      #e39ec7 0%,
+      #fff4f5 76%
+      );
+      color: #160a40;
+      border-radius: 24px;
+      overflow: hidden;
     }
 
     h1 {
-      color: #c13f83;
+      color: #b85488;
       font-size: 22px;
+      font-family: "Gochi Hand";
     }
 
     input, button {
@@ -27,14 +47,94 @@
     }
 
     input {
-      border: 1px solid #e2b5d0;
+      border: 1px solid #e472b4;
+      font-family: "Gochi Hand"
     }
 
     button {
-      background: #c13f83;
-      color: white;
+      background: radial-gradient(
+        Circle,
+        #e672b0 0%,
+        #a6cf96 90%
+      );
+      color: rgb(74, 7, 74);
       border: none;
       cursor: pointer;
+      font-family: "Gochi Hand"
+    }
+
+    .card {
+      background: #efb6d7;
+      color: rgb(55, 8, 51);
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .summary-card {
+      display: none;
+      padding: 14px;
+      border-radius: 18px;
+      margin-top: 12px;
+      border: 1px solid transparent;
+    }
+
+    .summary-card-initial {
+      padding: 10px 14px;
+      border-radius: 18px;
+      margin-top: 12px;
+      border: 1px solid transparent;
+    }
+
+    .summary-card h2 {
+      font-size: 17px;
+     margin-top: 0;
+      margin-bottom: 8px;
+    }
+    .summary-card p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+    .avg {
+      background: radial-gradient(
+        Circle,
+        #fceef6 0%,
+        #e097be 86%
+      );
+      border-color: #1b0a49;
+    }
+    .positive {
+      background: radial-gradient(
+        Circle,
+        #f8edf3 0%,
+        #d8bbd9 75%
+      );
+      border-color: #af3b8e;
+    }
+    .negative {
+      background: radial-gradient(
+        Circle,
+        #f8edf3 0%,
+        #cad1ed 75%
+      );
+      border-color: #93afe8;
+    }
+    .mixed {
+      background: radial-gradient(
+        Circle,
+        #f9f4f7 0%,
+        #f6d8bb 75%
+      );
+      border-color: #f3cfbb;
+    }
+
+    .greeting {
+      background: radial-gradient(
+        Circle,
+        #fceef6 0%,
+        #c0a0c0 86%
+      );
+      border-color: #1b0a49;
     }
 
     #result {
@@ -45,14 +145,49 @@
   </style>
 </head>
 <body>
-  <h1> ⭐ Terp Insight</h1>
-  <p>Understand the professor at a glance.</p>
+  <h1> ⭒ TerpWhisper</h1>
+  <p>Understand your professor with just a whisper of knowledge.</p>
 
   <input id="professorName" placeholder="Enter professor's name">
-  <button id="analyze">Analyze reviews</button>
+  <button id="analyze">analyze reviews</button>
 
-  <p id="status"></p>
-  <pre id="result"></pre>
+  <div class="summary-card avg">
+    <h2>⭒ Average Rating</h2>
+    <p id="averageRating">
+      The average rating will appear here.
+    </p>
+  </div>
+
+  <div class="summary-card positive">
+    <h2>⭒ The Good Stuff</h2>
+    <p id="positiveSummary">
+      The positive summary will appear here.
+    </p>
+  </div>
+    
+  <div class="summary-card negative">
+    <h2>⭒ The Not-So-Good Stuff</h2>
+    <p id="negativeSummary">
+      The negative summary will appear here.
+    </p>
+  </div>
+
+  <div class="summary-card mixed">
+    <h2>⭒ The Mixed Info</h2>
+    <p id="mixedSummary">
+      The mixed info will appear here.
+    </p>
+  </div>
+
+  <div class="summary-card-initial greeting">
+    <h2>⭒ How it Works!</h2>
+    <p id="howItWorks">
+      Enter a professor's name, click "analyze reviews", and you'll get an accurate summary of the positive, negative, and mixed feedback.
+    </p>
+  </div>
+
+  <!--<p id="status"></p>
+  <pre id="result"></pre>-->
 
   <script src="popup.js"></script>
 </body>
