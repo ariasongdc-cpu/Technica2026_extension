@@ -11,6 +11,11 @@ button.addEventListener("click", async () => {
     return;
   }
 
+  Document.querySelectorAll(".summary-card").forEach(card =>{
+    card.style.display = "block";
+  });
+  Document.querySelector(".summary-card-initial").style.display = "none";
+
   status.textContent = "Fetching professor data...";
   result.textContent = "";
 
