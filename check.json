@@ -1,245 +1,225 @@
 {
-  "name": "Steven Chadwick",
-  "slug": "chadwick",
-  "average_rating": 3.69,
-  "review_count": 101,
+  "name": "Monique Koppel",
+  "slug": "koppel",
+  "average_rating": 3.23,
+  "review_count": 123,
   "courses": [
     {
-      "course": "MATH140",
-      "count": 60,
-      "avg": 3.45
+      "course": "CHEM232",
+      "count": 68,
+      "avg": 2.53
     },
     {
-      "course": "MATH141",
-      "count": 24,
-      "avg": 4.67
+      "course": "CHEM231",
+      "count": 42,
+      "avg": 4.05
     },
     {
-      "course": "MATH432",
-      "count": 6,
-      "avg": 1.33
+      "course": "CHEM241",
+      "count": 5,
+      "avg": 4.8
     },
     {
-      "course": "MATH310",
-      "count": 2,
-      "avg": 5
+      "course": "CHEM131",
+      "count": 5,
+      "avg": 4.2
     },
     {
       "course": "Unknown",
-      "count": 2,
+      "count": 1,
       "avg": 3
     },
     {
-      "course": "MATH424",
-      "count": 2,
-      "avg": 4.5
+      "course": "CHEM232V",
+      "count": 1,
+      "avg": 4
     },
     {
-      "course": "MATH461",
+      "course": "CHEM135",
       "count": 1,
-      "avg": 5
-    },
-    {
-      "course": "MATH405",
-      "count": 1,
-      "avg": 1
-    },
-    {
-      "course": "MATH140H",
-      "count": 1,
-      "avg": 5
-    },
-    {
-      "course": "MATH402",
-      "count": 1,
-      "avg": 5
-    },
-    {
-      "course": "MATH410",
-      "count": 1,
-      "avg": 5
+      "avg": 3
     }
   ],
   "recent_reviews": [
     {
-      "created": "2026-02-28",
-      "course": "MATH140",
-      "rating": 3,
-      "review": "Exams are a little hard, he is very nice but he doesn't seem to care about teaching."
-    },
-    {
-      "created": "2025-12-16",
-      "course": "MATH140",
+      "created": "2026-09-28",
+      "course": "CHEM232",
       "rating": 5,
-      "review": "Goat"
+      "review": "I thought this lab was a lot more organized than the gen chem lab. There's also not a lab report every week which was very nice. Some of the post lab quizzes were really difficult, but the curve is insanely good. I got a 1/20 on the first quiz and still got an A in the lab overall. She provides lots of resources to succeed and explains things really well."
     },
     {
-      "created": "2025-12-06",
-      "course": "MATH140",
+      "created": "2026-03-25",
+      "course": "CHEM241",
+      "rating": 5,
+      "review": "took CHEM231 with her last semester, and I\u2019m taking CHEM241 with her right now (Spring 2026). my review for that class starts with \u201cTake her!\u201d for reference. there\u2019s a lot of good in this class --- everything I mentioned in my 231 review, in fact. She still brings her love of the game and continues to connect new topics to familiar ones in a way that just works. there\u2019s not much else to add beyond what I wrote there. I\u2019d just recommend making a basic Anki deck for mechanisms on an exam-by-exam basis and continue to review those to stay fresh for synthesis problems. TL;DR: This class is awesome. Dr. Koppel is awesome. Take her class."
+    },
+    {
+      "created": "2026-03-25",
+      "course": "CHEM231",
+      "rating": 5,
+      "review": "take her! there's a lot of good about this class, but I think what stood out to me was her love for the subject that she brought to class every single day (despite all the complaining/lazy/inattentive/grade-grubbing undergrads she had/has to deal with, which i find seriously impressive), be it building a cohesive narrative/thoroughly motivating the various topics we covered as we moved throughout the course, telling stories of past experiment woes, giving real-life context to certain reactions (eg this reaction is regularly used in industry for xyz, if I was doing this in lab I'd probably change this, etc), offering ideas for different ways we could earn a Nobel prize, etc. i think you get the idea. not only were her lectures super engaging, she also just seemed to 'get' how someone new to organic chemistry might struggle (which I did), and taught with that in mind. I've since forgotten what exactly the subject was, but I remember we were discussing a reaction with an unexpected product, and after stepping through one example, she said something along the lines of \"let's try xyz, maybe it'll be better [it didn't]\". maybe not the most compelling example, but it really resonated with me, as I can't think of many other professors I've had that came with that perspective. Her willingness to abuse notation/skip on some formalism for our understanding also went hard af. other pros: - she provide plenty of resources to help you succeed in the class (as the below reviews have covered, eg the late night show, past exams, creating fresh practice problems to supplement exam prep, etc) - homework is graded on an adjusted scale, with 80% correct being an A - straightforward exams, interesting extra credit problems occasionally. what she covers in lecture is what's tested, there's generally no curveballs, and regrades for TA errors were prompt - good textbook. you get lifetime digital access, it's the same text used in CHEM242, and the text is super straightforward/teaches you what you need to know. would HIGHLY recommend paying the addl $10 for the included practice problems/key. - posts her notes to ELMS as a PDF cons (minor) - lecture not recorded - $30 for Wiley e-text (but wtv, she also offers a FOSS alternative text, it just has a less 1-1 correspondence with lecture topics. reading guide is provided to match though) in summary, 10/10 no notes please do yourself a favor and take her class"
+    },
+    {
+      "created": "2026-03-14",
+      "course": "CHEM232",
+      "rating": 1,
+      "review": "Someone even worse than gen chem lab. This has genuinely been the worst lab experience in my life. Everyone has failed the first TAQ and Koppel is very unhelpful. Everything in the lab is broken and my TA tells us to ignore what the manual says every time. The PLQs are also horrible and honestly impossible with knowledge from just what we learn."
+    },
+    {
+      "created": "2026-01-26",
+      "course": "CHEM231",
+      "rating": 5,
+      "review": "Take this professor. I attended GSS weekly and did the practice exams, and I was always well above the average on the exams. Lecture can be a little confusing at times if you don't review the material beforehand, but as long as you keep up with the content, you will be fine. I would definitely recommend taking Koppel! - I thought her exams were fair, and the curve is very generous. She offers Zooms at night with extra practice problems before every midterm and will answer questions. She clearly cares about her students a lot and keeps lecture interesting. Most of these bad reviews are for lab, which was a different story and unavoidable... I still did well in it, but found it to be even harder than lecture. Make sure to go to the TAs with questions, and they can help you out."
+    },
+    {
+      "created": "2026-01-23",
+      "course": "CHEM231",
+      "rating": 5,
+      "review": "She\u2019s a a little intimidating but a really good teacher. I learned a lot and would definitely recommend her!"
+    },
+    {
+      "created": "2026-01-20",
+      "course": "CHEM232",
       "rating": 4,
-      "review": "Average professor, good notes and tried to explain things to the best of his ability. Pretty fair with grading. Not a big fan of the loud breathing into the microphone during lecture but other than that pretty solid."
+      "review": "Review for Lab and Lecture Lecture - Provides past exams that are super helpful, the format and problems on the practice exams were very similar to the actual ones - Very friendly during office hours, takes time to make sure you know the material - Hosts \"Late Night Sessions\" to do practice problems which is super helpful - The first month was basically gen chem review, stereochem (the first definitive orgo topic) wasnt even on our first exam - Pretty good lecturer, explains things well - Homework was hard at times but all you need is an 80% on all homeworks for Koppel to bump it up to an 100%, and getting an 80% is pretty easy to do, also all homework is due right before an exam, so you can space it out however you want to (which is also nice) General tips (Coming from someone who got an A+ in lecture) - Memorize the flowcharts she gives for the alkene and alkyne reactions - this will make the exams so much easier trust me - try not to miss any lectures, you can get behind very easily and while Koppel does post notes, her handwriting is hard to read and her notes are hard to understand if you did not go to lecture - you dont need to go to discussion (I never did), but you definitely do need to practice outside of class, i mainly went to GSS, office hours, and just studied on my own Lab (I got an A) - Time consuming - The first TAQ was very very hard, I got a 5% (not a typo) on it, however, the next 3 are so much easier, all you need to do is watch the lab video on the ELMS before lab and you can basically ace the TAQs - pre labs were very easy - post labs were at the very least time consuming, and sometimes very hard - my advice is to look up answers, consult friends in lab, go to TA office hours, but also just be willing and ready to accept that some of the problems are incredibly hard to solve - labs themselves were pretty easy, for 2 of the labs, the TA does the lab so you just leave lab after doing the pre lab quiz and the TAQ (if you have one) which takes like 20 minutes - also you do basically all labs with a partner, so it makes it much better Overall comments - in my opinion Koppel is pretty over hated. She provides the resources needed to pass, is a good lecturer, and I really like her Homework policy. Her labs aren't that bad just be prepared to completely fail the first TAQ"
     },
     {
-      "created": "2025-05-25",
-      "course": "MATH432",
+      "created": "2026-01-16",
+      "course": "CHEM231",
+      "rating": 3,
+      "review": "If you get stressed easily by professors that have a disorganized way of teaching Dr.Koppel is not the teacher for you. She begins each topic with the general ideas and then focuses in on smaller topics but there are no order or outlines to follow. Looking back over my notes was a nightmare and if you miss a class and look at her posted notes, you will be beyond confused. I highly recommend the Orgo as a second language books if taking this course. The curve is based off of class average which was decently high for my class but I passed with a C with a 58 somehow. The online quizzes and assignments boost your grade but the exams and TLQ in lab are challenging and she does not give you any type of review and will usually be 1/3 of the way through new material, before the exam which gets hard to manage. If you dedicate the time and are good at self-teaching she's not a bad teacher but you cannot slack off or have a bad week you will fall behind orgo is alot of material!"
+    },
+    {
+      "created": "2025-12-23",
+      "course": "CHEM232",
+      "rating": 3,
+      "review": "I took this lab in Spring 2025, and I\u2019m not going to lie\u2014this lab is cheeks. It\u2019s definitely better than CHEM132 but worse than CHEM242, so at least the good news is that the grass is greener on the other side. There is simply way too much work for a 1-credit course. Most weeks, you have both a post-lab worksheet and post-lab questions. You lowkey have to go to office hours if you want to do well on the labs. Some weeks are lighter and only require a lab worksheet, but then you\u2019re expected to study for a TAQ, which is basically a quiz on the lab experiment. The TAQs are pretty hard and you need to know not only every step of the lab but also the underlying conceptual theory. My TA was just as confused as we were and was rarely prepared for lab. Most of the time, he would figure things out as we were actively doing the experiment. People often complain that TA office hours are useless, but my advice is to go to another TA's office hours and find one that basically gives out the lab answers. I will say, the lab practical is very easy, and you can probably find the review document or a Quizlet online. The only reason I ended the course with an A is because there\u2019s a very generous curve at the end and my 91% was curved up to an A. Good luck, and honestly, just try your best."
+    },
+    {
+      "created": "2025-12-22",
+      "course": "CHEM232",
       "rating": 2,
-      "review": "I took math432 with chadwick in fall2024 and math405 with him in spring2024. The positives about Chadwick are that he is very nice, and does seem to care about teaching. However, he teaches incredibly slow for a 400-level math class. In math405, we barely did half of what is expected, and in math432 we did everything on such a surface level you basically learn nothing. Also, Chadwick seems to always choose the worst textbook imaginable. In 405, we used Linear Algebra Done Wrong, which is okish, but there are so many other standard books that are better (Hoffman and Kunze, Axler, etc). In 432, we used Essential Topology, which is maybe the worst math textbook I have ever read. It covers standard content of point-set topology at an extremely surface level (it omits countability axioms, separation axioms, paracompactness, metrizability, and every other semi-advanced point-set topology topic), the exercises suck and are just proving theorems from the book (which are usually very easy and do not teach anything), and tries to cover algebraic topology, but does so very poorly. Literally any other textbook on topology I have seen would be much much better (munkres, dugundji, kelley, even something weird like Simmons). Chadwick's course followed this book, which led to point-set topology being glossed over in favor of giving a very surface level treatment of algebraic topology. It would have been much better if Chadwick just taught point-set topology and maybe at the very end did like a week or two on the fundamental group. Homeworks are generally very easy, and consist of just random problems from the textbooks. They take a while to get graded, and oftentimes, material that has not been in homeworks is on exams. Exam problems are generally very easy, but there is a time crunch which sometimes makes it a little hard. Overall, Chadwick is definitely a nice guy, but I don't think he's good at teaching 400-level math courses. He seems to be getting better? so maybe in a couple years he'll be fine, but for now, I would recommend almost anyone else for an upper level math course."
+      "review": "I have never hated a lab more; half the time things didn't work. But she curved my 80 to an A-"
     },
     {
-      "created": "2025-05-23",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "I've had Dr. Chad for both MATH141 and 140. After taking him for one full year, I can confidently say that he is a great teacher and might even be the best calc teacher at UMD. For MATH141, to achieve an A, you have to get above a 90 instead of 93. Additionally, he basically gives you 20 points of extra credit because he drops 20 points from the web assigns at the end of the semester. He also lowers the lowest mid term grade to be out of 50. For example, if you got an 80/100 he will turn it into a 40/50. He also drops a quiz and 3 worksheets. He posts all his notes in canvas. His notes are so good that even though I don't pay attention in his class at all, I still understand the notes perfectly. I've literally only studied the day before all the midterm tests and still averaged 95's because his notes are very clear. Additionally, the best part about taking his class is that the practice tests that he gives are almost exactly like the actual test. Overall, I really recommend taking Dr. Chadwick for both 141 and 140 because of how easy it is to get an A and also because of how easy he makes it to understand the concepts. (I did already take calc in high school)."
+      "created": "2025-12-21",
+      "course": "CHEM232",
+      "rating": 3,
+      "review": "horrible ahh 1 credit lab. taq's are IMPOSSIBLE. genuinely no idea what was going on for any of them. average was a 5/20 so im really struggling to understand why they're even administered if everyone fails. i guess it helps if ur in her lecture, but personally i was not and i was taking these quizzes on topics i hadn't even learned yet. the plq's are also really hard some weeks. GO TO TA OFFICE HOURS THEY WILL HELP, but honestly it all depends on which TA is grading them that week, some are nicer and more forgiving than others. the lab itself was fine me and my partner made stuff up half the time and no one cared, as long as u looked like u were busy. curve was really good. i had an 85 raw and it was curved to an a, and i know someone who had a 68 and was rounded to a b-. i have heard shes very unapproachable if u ever have a problem, but my ta was very nice and understanding 99% of the time i asked her anything, but u dont get to pick ur ta so it's really all luck. honestly gl and study for those taq's to the best of ur ability- it will really help separate u from the average grades at the end of the semester"
     },
     {
-      "created": "2025-05-18",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "Dr. Chadwick is probably my favorite professor this semester! He was very helpful, and I found his lectures to also be very helpful. He is an understanding professor so I would say communicate. Great professor and you can't go wrong with him. Highly recommend Dr. Chadwick!"
-    },
-    {
-      "created": "2025-05-18",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "OMG this professor has to be the best professor at UMD. I PASSED CALC 1 WITH A C AND PASSING THIS CLASS, CALC 2, WITH AN A. his exams are SUPER EASY. he never gave any jumpscare problems on any exams. ALSO the TAs were amazing. I guarantee that if you go to every discussion, you won't even need to do the homeworks. Quizzes are very easy as well and both the professor and the TA prepares you well for them. A little side note: homework is worth like 2% of your grade so you're better off focusing on the quizzes, worksheets in discussions, and exams as they are worth a lot. If you have to wait on the waitlist, do it."
-    },
-    {
-      "created": "2025-05-14",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "Chadwick is a great teacher and his lectures feel well planned and organized. He is generally very accommodating around making up exams and he will extend homework pretty often if he doesn't cover everything in class. Overall great guy and fair professor."
-    },
-    {
-      "created": "2025-05-14",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "Chadwick is actually fantastic. He goes over examples very slow in class which is very helpful to understanding the subjects. His exams I always found to be super fair, never overcomplicating questions, just testing your basic knowledge. In the off chance he put an unpredictable question on the exam, he would drop hints at it during lecture. My TA, Ben, was great, very knowledgeable and patient when explaining questions. He also drops a lot of things and is very nice with his grade cutoffs. Overall, highly recommend taking him if you have the chance."
-    },
-    {
-      "created": "2025-05-13",
-      "course": "MATH141",
+      "created": "2025-12-20",
+      "course": "CHEM231",
       "rating": 4,
-      "review": "Good Professor does difficult examples in lecture, and uploads the lecture notes which is insanely helpful. The exams are challenging, but he gives review problems to drive your thoughts on the topics, they are not the same questions with different numbers which I thought was pretty good."
+      "review": "Organic Chemistry is a complicated course, and nothing is going to make it easier. This course is more about understanding than CHEM131. Dr. Koppel has definitely made CHEM231 better after my awful experience with CHEM131. Her homework can be a bit challenging, but it does help with understanding the materials. I recommend doing your homework two weeks before the due dates. Koppel also does some practice problems during the lecture, but don't just rely on those practice problems; definitely go through ELMS and try out other practice problems that she posted, and try her practice exams. Organic Chemistry as a Second Language textbook/PDF is going to help you a lot. She gives generous curves/cut-offs, so that is a plus. Her exams are fair. The averages for midterms are usually around 60% and the final is around 46-55%. Her curves/cut-offs depend on the performance of the whole class, so if you want to do well in this class, definitely study a lot, practice mechanisms (understand how the mechanisms work and why), and ask questions. Try to get a little above the class average, and you will pass the course."
     },
     {
-      "created": "2025-04-30",
-      "course": "MATH141",
+      "created": "2025-12-20",
+      "course": "CHEM231",
       "rating": 5,
-      "review": "Definitely take him if you have the chance! Lectures are very straightforward, always extends homeworks, and very fair exams. I also had TA Lixin and he is great."
+      "review": "Honestly here is my breakdown that I wish someone would tell me before taking this class: - I don't go to lecture, she's lwk very confusing. I realized her teaching style is just not for me because she goes so so fast. But if u do miss lecture just know the notes she posts are garbage. They're highkey her scribbles from in class. You actually need to attend those lectures. -READ THE TEXTBOOK. this will save you. never went to lecture, just read the textbooks and that CLUTCHED. The last exam I figured the strat was to skip lecture and read the textbook.. I got a 96. take that as u will. -the final exam was slight hard... I think that's why our curve was so good. -she has extra credit points, she gave out 4 this semester and they're usually the day before break. so once before fall break and once before winter break I think. but if u seriously can't make those days u can ask a friend to write ur name down on the attendance sheet because lwk no one checks. Overall: Guys just take koppel. If anything listen to this: my 85 seriously got curved to an A. Like what. All the reviews that are saying not to take her just aren't meant for the course. Because let's be so for real this IS organic chemistry. It's not gonna be easy. But if u study enough you can easily get that A in this class. GOOD LUCK GUYS!!"
     },
     {
-      "created": "2025-01-04",
-      "course": "MATH140",
+      "created": "2025-12-14",
+      "course": "CHEM232",
+      "rating": 3,
+      "review": "As a 1 credit course, like the other reviews say, this class is a LOT of work and very disorganized. Oftentimes you will find yourself writing the same things in many different places. But really, it is not horribly difficult, just rather time consuming. Points go as following: 5 points for the pre-lab quiz (pretty straightforward if you read the procedure), 5 points for the notebook pages (pretty straightforward too), 20 points for the worksheets (straightforward as long as you did the experiment or the makeup), and 20 points for either the PLQ (post lab questions) or TAQ (theory and applications quiz)...and no, they are not as notorious as people say. All you need to do for PLQs to do well on them (coming from someone who repeatedly scored 90%+ on them) is to understand the procedure of the lab: not necessarily which chemicals were used, but the objective of the lab. Essentially, they are to apply the objective of the lab to a different set of chemicals, as a sort of \"what if\" situation. Office hours help A LOT. Sometimes they were very confusing, other times pretty easy. But do not ever wait last minute to do them, that's how you screw up. TAQs are like PLQs, but instead of having a week or two to do it, you have only 10 minutes in class. These...are horrible to say the least. Because they are so rushed, getting a 10/20 or above will feel like luck. Class averages for these being under 5/20 are no exaggeration. Overall, it is possible to do well in the course. You just need to be able to understand the objective of each procedure to pass."
+    },
+    {
+      "created": "2025-12-13",
+      "course": "CHEM232",
+      "rating": 3,
+      "review": "Lab over the summer felt like a fever dream. It was so fast-paced and fried me. My TA also didn't quite seem to know what he was doing! Just come prepared for each lab."
+    },
+    {
+      "created": "2025-12-13",
+      "course": "CHEM131",
       "rating": 4,
-      "review": "The tests were difficult, but fair. Chadwick is a good teacher and gave great lectures. However, they could have been better had Chadwick spent more time going over examples rather than rewriting proofs."
+      "review": "Taking this over the summer probably wasn't the best idea. I grasped the pace of the course while taking it. Orgo requires a lot of memorization, which does not couple well with a short amount of time. Also, a solid foundation of it is key to succeeding in Orgo 2. Professor Koppel is not as bad as I thought. She cares and does her best. However, it's just difficult to sit through 10 hours of lecture consecutively in a week, alongside the lab. Not recommended over the summer!"
     },
     {
-      "created": "2024-12-31",
-      "course": "MATH432",
+      "created": "2025-12-13",
+      "course": "CHEM231",
+      "rating": 3,
+      "review": "She\u2019s a nice lady and I don\u2019t think she\u2019s a bad professor. However, I was blindsided about the curve for this class because it is based on the class average after each exam. With that being said, if your class overall did well that semester, the cut off might be higher. The class average for my class was 72% which is relatively high for orgo 1 compared to other orgo 1 classes."
+    },
+    {
+      "created": "2025-12-08",
+      "course": "CHEM232",
       "rating": 1,
-      "review": "The exams took a minimum of 2 weeks to get graded each time but usually longer for a reasonable class size. Homework grading was equally bad, so there was no solace in that either. We never got material back in time to study for a following exam. Frankly sometimes the homework for material on a coming exam was due a week after the exam itself, so the exam was completely blind on whether you really understood the material. His explanations often left almost everything to be desired with complex topics being sped through while simple things were fixated on for multiple classes, and material was referenced without ever actually being covered. Multiple times in lecture, he would mention that something was similar to something else, or to imagine it as if \"x\", but we had no basis for that other thing. He didn't pay attention at all to the pre-req's of the class, so if you hadn't previously taken abstract algebra you were pretty much out of luck given his inability to explain the material and the amount of algebra expected in the course on exams and homework. While it was nice that there were not many homeworks it also meant, that given he used basically every textbook problem for homeworks, there was a severe lack of material to review prior to an exam. The exams were a mix of copy pastes of textbook/hw problems, changed up versions of proofs of theorems or simpler but related results, or required you to have a strong intuition for the subject to solve from scratch. The grading on exams was often rather harsh, with a computational mistake easily losing 20% or more of the points of a question. Partial credit would often do a lot of work there, but given I would sometimes get a 60% on a question for vaguely attempting it and an 80% for giving a correct proof with a single mistake, effort never felt particularly rewarding. I also agree he's just too busy with other classes, as when I did go to office hours it was often either very crowded or I felt like he couldn't explain my question at all. Overall he's a very nice person and clearly means well, but is too poor at explaining concepts and helping students develop the needed intuition for a subject like topology to give students room to succeed."
+      "review": "Genuinely one of the worst professors I\u2019ve ever had. Sends emails out SUNDAY nights about what we need to do for lab the next week. I\u2019d say reports are graded more strict than 132. There has been multiple occasions where I go in for office hours and the TAs will tell me my post labs are all correct but when I submit them I get a 10/20. Doesn\u2019t seem like the TAs know how to do it either. I\u2019ve also heard from multiple TAs that Dr koppel tells them to be as strict as possible with grading and give minimal points."
     },
     {
-      "created": "2024-12-21",
-      "course": "MATH432",
+      "created": "2025-12-08",
+      "course": "CHEM232",
+      "rating": 4,
+      "review": "Listen, chem lab will be chem lab, but I enjoyed this lab much more than gen chem. Go to the TAs office hours. My only thing is don't go to office hours without trying to do the work yourself. If you go in with some basic understanding, things will make much more sense and it'll be easier for the TA to help. Also, make sure you know the concepts because you keep building on it throughout the semester. The TAQs can be confusing but they're not as bad as people make them out to be. Not saying that I got 100s, just saying that you can at the very least get above the average if you review the theories. I do agree with others on this course being a lot of work for 1 credit but it's to be expected."
+    },
+    {
+      "created": "2025-12-05",
+      "course": "CHEM232",
+      "rating": 3,
+      "review": "As a 1 credit course, this lab is a lot more work than I believe 1 credit should be offering. Not only is there 3 hour lab once a week, but the post-lab questions, post-lab worksheets, studying for TAQs, and completing pre-labs often takes me 3 hours total to finish. This class took a lot of my time and effort and I think some of the grading rubrics of PLQs are quite strict/too rigid. I think the course was interesting and definitely taught me some new things, but it is overall just way too much work for a 1 credit course. Furthermore, office hours for the TAs were often very unhelpful. I went to many office hours for different TAs and half of them do not know what is going on. They don't know how to answer our post lab questions either and going to multiple TAs will give you different answers that completely vary from each other."
+    },
+    {
+      "created": "2025-12-02",
+      "course": "CHEM231",
       "rating": 1,
-      "review": "Chadwick really shouldn't be teaching these important 400-level courses, at least not yet. MATH432 is the only undergraduate course in topology, an incredibly important field that is used across most of modern mathematics, in addition to being researched in its own right. It's very useful to have a solid foundation in topology, in addition to the insight that it can give about seemingly unrelated things. Chadwick's style is to lecture basically verbatim from the textbook, which already isn't ideal for someone interested in seriously *learning* any topology, beyond what they could do just on their own. This situation was made significantly worse by his choice of textbook, Martin Crossley's \"Essential Topology.\" The book is really really bad. It chooses to skip a lot of important topics in point-set topology (separation axioms, metric spaces, closures and limit points, etc.) and the exercises (which were often homework problems, and sometimes even exam problems) are not very instructive most of the time (show that Z as a subspace of R is Hausdorff, or which of these topologies on {a,b,c,d} are Hausdorff and none of them are lol). It spends a lot of time talking about algebraic topology, but without any real motivation or depth. It's also very hand-wavy about some technical details, and occasionally makes mistakes. These problems bled into the class, and made it essentially useless for anyone who wants to seriously learn topology. (one more annoying thing: he does not publicly correct errors in his lectures). If you attend any other similar 400-level with a decent professor (403/404, 405, 437, 436, 446 etc.) the difference will be clear. As for the course mechanics, he's a slow grader, and there were three exams. He will curve exams when he thinks they're too hard or long, and I think he adjusted cutoffs at the end? He's a nice guy, and mostly available to answer questions (although you may not get a satisfying answer). I bet some of these problems are because he is the chair for the 140/141 sequence, which seems like a lot of work to do alongside teaching something like 432. I'm sure he's a great MATH140 prof, but for upper-level courses, stay away."
+      "review": "I already wrote a review for her but I realized I left out a very important con of taking her: her notes are actually awful. She basically just scribbles down random structures and then uploads them on canvas so if you miss class you're screwed. She also has really bad handwriting that I have trouble reading even though I have bad handwriting."
     },
     {
-      "created": "2024-12-18",
-      "course": "MATH140",
+      "created": "2025-12-01",
+      "course": "CHEM231",
+      "rating": 3,
+      "review": "As a person, she is very sweet and she cares a lot about her students. As a professor, she can be kind of hard to follow and unorganized. I think this more so had to do with the course and the difficulty of the content. I believe she is probably one of the better options for orgo, but in all honesty we can all agree there really isn't a \"good\" option in the umd chemistry department."
+    },
+    {
+      "created": "2025-11-10",
+      "course": "CHEM232",
+      "rating": 1,
+      "review": "Who's old, miserable, and unaware? You guessed it, Dr. Koppel!!! She refuses to acknowledge that things need to improve within her course. And coming from a TA the average for the first lab quiz was a 3.7/20."
+    },
+    {
+      "created": "2025-10-31",
+      "course": "CHEM232",
+      "rating": 4,
+      "review": "This class so far has been fine. TAQ 1 was a little challenging, but honestly not crazy (I'd review how to tell the density of diff molecules lol) as long as you had a solid theoretical understanding/intuition for extraction (rtfm!). Given the semester GroupMe was rampant with people asking braindead questions 24/7 (eg what experiment are we doing this week??? what reagents does that need !?!?!1/1///???), I suspect that may be the majority of the 1-star reviews Dr. Koppel received below; that is to say I wouldn't stress too hard abt this class. TL;DR not terrible, just accept this class will be more work than the 1 credit suggests (and know OH are a tremendous help)."
+    },
+    {
+      "created": "2025-10-02",
+      "course": "CHEM232",
+      "rating": 1,
+      "review": "Genuinely more disorganized than Chem 132..."
+    },
+    {
+      "created": "2025-07-24",
+      "course": "CHEM232",
+      "rating": 1,
+      "review": "You\u2019re going to make the labs go full length most of the time? Fair. You\u2019re gonna make us do the procedure ourselves? Fair. You\u2019re going to thoroughly quiz us on material within the lab book? Fine. You\u2019re going to give us post-lab questions on things we never learned, and there\u2019s no way to know, other than maybe one cruddy, unrelated example from the lab book, which provides maybe a fifth of the information needed to answer the question? I don\u2019t think so. Not a one-credit class. This lab is harder than lecture! I did marginally better on exams from lectures than the plqs/taqs here, while spending less time. It is preposterous and vicious to put people through this!"
+    },
+    {
+      "created": "2025-06-20",
+      "course": "CHEM231",
+      "rating": 5,
+      "review": "If you took Friedman, Dr. Koppel will feel like a lifesaver. I nearly failed General Chemistry, but with Dr. Koppel for Organic Chemistry, I got an A. I loved her class. She explains things clearly and gets straight to the point. Honestly, I love her teaching style\u2014though my only comparison is Friedman. She's very straightforward and will tell you exactly what you need to know and what you don\u2019t. For example, if she thinks a topic isn\u2019t worth stressing over (like nomenclature), she won\u2019t overemphasize it. That part was like 10 points on Midterm 1 and never showed up again. She thoroughly explains concepts in a way that makes sense if you\u2019re paying attention. Her exams are fair and similar to the practice problems she gives\u2014she provides lots of practice. If she\u2019s still teaching lab, she connects it to what you\u2019re doing in class, which helps a lot. (side note about lab: go to office hours IT WILL SAVE YOUR GRADE, but find the ones that are actually helpful). A lot of people struggle with mechanisms, but those of us who had Koppel at least understood the basics, especially for lab concepts like radicals. And if you need more help in her class, she provides supplemental videos in the lab that can be used in lecture portions. That\u2019s just my experience, though. Some people feel she goes too fast, but I haven\u2019t heard many complaints about the difficulty of her exams. Honestly, it\u2019s one of those \u201cyou either get it or you don\u2019t\u201d situations\u2014but that applies to any professor \ud83d\ude2d Some notes on Professor Koppel and my experience: - I didn\u2019t go to office hours or ask questions in class, but I did sit in the front. - I started studying several days in advance using YouTube videos, one-pagers, practice problems, and flashcards. I didn\u2019t really use the textbook. - The homework setup is a bit unusual \u2014 you have until each midterm to complete the corresponding sets. You only need about 80% for full credit. I mostly used the homework to study the week before each exam. - Her exams are very fair. If you do the practice exams, you\u2019ll be well prepared. The final was long but also fair. - For mechanisms, use flashcards and practice them repeatedly. - Go to all the late-night review sessions and practice exams \u2014 they help a lot. - She seems funny and nice; she often cracks jokes during class. - My TA was also really helpful in explaining things."
+    },
+    {
+      "created": "2025-05-22",
+      "course": "CHEM232",
+      "rating": 1,
+      "review": "(Fall 2024) Insane workload for a 1-credit lab course. I found I was spending hours on work outside of lab. In my opinion, the lab itself is structured badly and not very well aligned with the 231 course. Lab experience is very dependent on TA. Didier was great at making a 6:30-9:30 lab feel not miserable and having good vibes, even if he wasn't always the most knowledgeable. I never interacted with Koppel herself, but there was an incident where at office hours, multiple TAs didn't understand the post-lab question/what she was looking for, and one went up to ask. She sent him back down with nothing, and told him that he was giving us too much help. Really soured my taste on her. Average weekly workload for the lab looks like: - Pre-Lab Writeup (Objective, Procedure, Reagent Table with structures) - Pre-Lab Worksheet (Mostly fine if you read the theory/procedure, but sometimes confusing) - Watch the lab video (Not always necessary) - Pre-Lab Quiz (A grade boost as long as you read the procedure. A total no-brainer.) - Post-Lab Worksheet (Answering a few questions based on things in lab. Functionally a lab report. Not terrible.) - Post-Lab Questions (Evil. Oftentimes not related to anything done in lab, vaguely about theory. It's hard to understand what she actually wants in an answer. Office hours are a saving grace, but even the TAs don't always know what she wants or how to answer the question. Also, for two different weeks, required reading grad-school level papers.) On the bright side, if you have to take orgo 2 lab, doing this one first will make it feel like a walk in the park!"
+    },
+    {
+      "created": "2025-05-22",
+      "course": "CHEM231",
+      "rating": 5,
+      "review": "Take her!!! She teaches in a very organized, easy to follow way, and keeps lecture interesting. As someone who learns from examples, she offers so much practice: test-like example problems in class, worksheets on cavas, late night problem-solving zoom session, and any other type you request if you visit her during office hours. Her exams are very predictable and very fair-- it will never be something you have not seen before. Yes-- all of the orgo professors are good, but when comparing her to the others (who my friends took) her organization of content made more sense to me (and she has a nice curve AND homework to help!). As far as exams, it is very possible to get an A, even above-- there is extra credit! When looking at grades, they seem to be mostly determined by how much you study. The best advice I can give for Koppel is: study content as you get taught it in lecture, go to her late night zooms (test questions directly from!), study in advance so that if you are slightly confused on anything-- office hours!"
+    },
+    {
+      "created": "2025-05-22",
+      "course": "CHEM232",
       "rating": 2,
-      "review": "Note: Chadwick is not the GOAT. Whoever wrote that review was lying. While he\u2019s not a bad professor, I\u2019d rate him as more mid-tier than anything else. Before taking this class, make sure you have a solid understanding of the prerequisite material and are ready to self-study before even attending lectures. Otherwise, you might find yourself confused and lost (it didn\u2019t help that nearly everyone in the class seemed to have taken calculus before). My biggest suggestion for doing well in this class is to study the textbook thoroughly, as the questions are typically recycled from there. That said, the difficulty is more a reflection of MATH 140 being a challenging course overall."
-    },
-    {
-      "created": "2024-12-17",
-      "course": "MATH432",
-      "rating": 1,
-      "review": "horrible professor, do not take him. his lectures are extremely slow and boring, and he consistently fails to provide intuition behind concepts. furthermore, the textbook he chose for the book was awful, oftentimes not giving clear definitions and skipping proofs, and sometimes skipping important concepts needed to fully understand the subject. chadwick also failed to grade assignments in a timely manner, making it hard to prepare for upcoming tests when he hadn't returned the last one. overall, chadwick should really not be teaching 400 level math, and i would recommend no one to take him for an upper level."
-    },
-    {
-      "created": "2024-12-16",
-      "course": "MATH140",
-      "rating": 3,
-      "review": "Chadwick looks like a skinwalker, but overall he is a decent professor. The class is not too difficult. The lectures are pretty straight forward and easy to follow, but my TA could barely speak English which made it difficult. The homework is not hard but it takes forever, the quizzes are super easy, and the exams are the hardest part imo. I got a 59 on my first exam and still ended with a B+ because I locked in. Chadwick is very strict with his grading policy however, so keep that in mind. I ended with an 89.1 and he immediately shut down any conversation of rounding up."
-    },
-    {
-      "created": "2024-12-14",
-      "course": "MATH432",
-      "rating": 2,
-      "review": "For MATH432 he was pretty bad at explaining things and was a very slow grader. He would not provide any real intuition and it was left completely up to the students to figure out how to conceptualize something. The class matched the textbook exactly and exam questions mirrored textbook and homework problems pretty well, so I would generally know what to expect on exams. He did give us a lot of time to do the homework, which I appreciated. Overall, the class was fine, and, while Chadwick isn't a terrible teacher, he isn't a good one either."
-    },
-    {
-      "created": "2024-12-12",
-      "course": "MATH140",
-      "rating": 3,
-      "review": "Very nice and helpful professor. He will stay after class to answer questions, but his lectures are extremely boring. His lectures are extremely slow paced and he takes time to answer every question. We may go over one or two questions the entire class period. I felt that it more beneficial to learn from the lecture notes he uploads than to attend class. The homework tended to be more difficult than exam questions and the examples we went over in class. The mandatory discussions were extremely annoying and the worksheets we completed contained difficult questions that often mixed in things we did not learn. I once asked about this and was told that it was supposed to be prior knowledge. They did end up getting easier as the semester ended as I am pretty sure the TA's talked to him about it but I am not certain. Overall, he was a decent professor and would recommend taking him if you prefer a slower paced class."
-    },
-    {
-      "created": "2024-12-10",
-      "course": "MATH432",
-      "rating": 1,
-      "review": "Chadwick should not be teaching 400 levels. He taught Math432 very differently form previous professors, and the course really suffered for it. He doesn't seem like he wants to be teaching it, and although he's nice, he's far too busy with 140/141 to dedicate any serious time to the course. He returns exams very late (returned exam 2 after we had already taken exam 3, and exam 3 after the end of the semester) but provides helpful feedback. If you have any other option for a 400 level, take anyone else."
-    },
-    {
-      "created": "2024-12-09",
-      "course": "MATH461",
-      "rating": 5,
-      "review": "I took this class over the summer with Chadwick and would definitely recommend it. The exams were super fair and very similar to the homework. Our final was only 1/3 cumulative (might be different during a regular semester) which was nice. We had weekly quizzes and homework that were basically free points. Even on the accelerated pace of a summer course the lectures were super easy to follow and the professor was always more than happy to answer questions. He was such a genuine guy who you could tell actually cared about your learning in the class."
-    },
-    {
-      "created": "2024-12-09",
-      "course": "MATH140",
-      "rating": 5,
-      "review": "Good prof. Not too much homework, but it is a lil bit difficult. Exams are easier. Lectures are straightforward and easy to understand."
-    },
-    {
-      "created": "2024-12-04",
-      "course": "MATH140",
-      "rating": 3,
-      "review": "Decent professor. Uploads lecture notes to elms after lectures. His notes are pretty reflective of the textbook. Worksheets are much more difficult than anything you'll see on exams. Exams are difficult, but webassign problems and previous exams are good study material for exams. Drops 1 quiz, 3 homeworks, and halves your lowest exam grade (if you got a 70/100 it would be a 35/50)."
-    },
-    {
-      "created": "2024-12-04",
-      "course": "MATH140",
-      "rating": 5,
-      "review": "Dr. Chadwick is a really fair MATH140 professor. His lectures consist of him writing neat notes for you to copy down for each chapter. He speaks well and is easy to understand, however sometimes he doesn't explicitly answer class questions. Make sure to pay attention in lecture as it can be pretty fast paced. His office hours are very helpful, he really gives the time to explain answers and concepts. His exams are challenging but that is to be expected. He posts 1-2 practice exams prior which are really similar to the actual exams. Overall, Chadwick is very knowledgeable on MATH140 and I recommend him for this class. The discussions are challenging but that is across the board for all MATH140 sections. My TA was very personable and helpful and gave as much help as he could without giving the answer away. Each discussion has a worksheet that is difficult, but follow directions and work with a group. Break the ice early on in the class and form that group! Also, quizzes are given every so often which are easy. For the latter half of the semester, the TAs review the quiz material before it is handed out which is very helpful. The beginning quizzes are not like that though so study before you get there. The homework is annoying as it takes a long time to complete and is only worth 3% of the grade. Dr. Chadwick will often extend homework if enough people in the class email him prior to the deadline. Dr. Chadwick is great for MATH140. I recommend him."
-    },
-    {
-      "created": "2024-12-03",
-      "course": "MATH140",
-      "rating": 4,
-      "review": "Good prof.. I like the way he writes notes during the lecture so you can see the process. However, he sometimes gives vague answers to questions or doesn't answer them at all. If you have a choice, try to get a TA other than Kaiwen. He's very good at math, but sometimes fails to explain concepts to people with a lesser understanding of math."
-    },
-    {
-      "created": "2024-12-02",
-      "course": "MATH140",
-      "rating": 3,
-      "review": "He uploads the notes for each class which is nice and he gives out practice tests which are very similar to the actual tests. His lectures are very helpful and he is good at explaining things. However, discussion was annoying. We were given worksheets to complete, 5 points for completion and 5 points for accuracy. The worksheets were super hard to do and way off from what we did in class or what was on any of the tests. They webassign homeworks take a really long time to do and they end up being only like 3% of your grade which was really annoying."
-    },
-    {
-      "created": "2024-06-28",
-      "course": "MATH141",
-      "rating": 4,
-      "review": "He uploads his notes and they are pretty neat, so that helps a lot. That being said, his lectures are pretty straightforward, by the book, and monotonous. The worksheets are hard and require a lot of work but the quizzes tend to be fairly easy. It would have been great if he gave more weightage to the webassigns, considering we need to pour so much of our effort into them. The exams are way past the questions done in lectures, but you will be fine if you are good at self-studying. He curves the lowest exam and the TAs were lenient graders, so that is pretty nice."
-    },
-    {
-      "created": "2024-05-16",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "For starters, I would like to mention that I started off with Tim P. Absolute NIGHTMARE. The difference between him and Chaddy is night and day. Chaddy truly is the goat. I would not have been able to pass calc 2 if it weren't for him. He's a really good lecturer and exams are pretty fair. However, he's not the greatest at answering questions in class because he seems to be a little shy. But if you put in the work, you'll really pass. I took very little calculus in high school so taking this class was really rough for me. But I did it! You can do it too! Take Chaddy!"
-    },
-    {
-      "created": "2024-05-12",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "goat. Dr. Chadwick is easily one of the nicest and most caring professors I've ever had. He stays after class to answer questions and is great at explaining topics during office hours, he even stays EXTRA long after class to ensure every student has their question answered. Calc II is not an easy subject so I could see why people could give him low ratings. His exams can be a bit more difficult but his teaching makes up for it. Quizzes aren't bad at all. Homework is homework. TAs are a bit iffy at first but chill. If you're looking for the best professor for Calc II, it's most likely Chadwick, if you're looking for slightly easier exams then a different professor might be better for you. You'll learn a lot with Chadwick. Overall goated guy, w chad"
-    },
-    {
-      "created": "2024-05-07",
-      "course": "MATH141",
-      "rating": 5,
-      "review": "More like Goatwick tbh. He is very understanding and I found his style of teaching to be extremely helpful."
+      "review": "I did not enjoy this class whatsoever and it is not worth the amount of effort you put in for a 1 credit class. The labs don't always match up with what you're learning in lecture and there isn't much guidance on how to approach questions, definitely go to office hours for extra help. There were also quizzes she'd give you that were horrible, I think one of them had an average of like 8/20 but wasn't curved. The class is curved at the end though and was very generous, as I got an A- from an 84%."
     }
   ]
 }
