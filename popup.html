@@ -4,29 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terp Insight</title>
-  
   <style>
     @font-face {
-      font-family: "GochiHand";
-      src: url("fonts/GochiHand-Regular.ttf") format("truetype");
+      font-family: "Gochi Hand";
+      src: url("font/GochiHand-Regular.ttf") format("truetype");
       font-weight: 400;
       font-style: normal;
     }
+
     body {
       font-family: "Gochi Hand";
+      font-size: 16px;
       width: 340px;
       padding: 14px;
-     background:
-      radial-gradient(
-        ellipse at 50% 50%,
-        #afb9e8 0%,
-        transparent 35%
-      ),
-      radial-gradient(
-        ellipse,
-      #e39ec7 0%,
-      #fff4f5 76%
-      );
+      background:
+        radial-gradient(
+          ellipse at 50% 50%,
+          #afb9e8 0%,
+          transparent 35%
+        ),
+        radial-gradient(
+          ellipse,
+          #e39ec7 0%,
+          #fff4f5 76%
+        );
       color: #160a40;
       border-radius: 24px;
       overflow: hidden;
@@ -34,7 +35,7 @@
 
     h1 {
       color: #b85488;
-      font-size: 22px;
+      font-size: 26px;
       font-family: "Gochi Hand";
     }
 
@@ -44,23 +45,24 @@
       padding: 10px;
       margin: 6px 0;
       border-radius: 8px;
+      font-size: 17px;
     }
 
     input {
       border: 1px solid #e472b4;
-      font-family: "Gochi Hand"
+      font-family: "Gochi Hand";
     }
 
     button {
       background: radial-gradient(
-        Circle,
+        circle,
         #e672b0 0%,
         #a6cf96 90%
       );
       color: rgb(74, 7, 74);
       border: none;
       cursor: pointer;
-      font-family: "Gochi Hand"
+      font-family: "Gochi Hand";
     }
 
     .card {
@@ -69,7 +71,9 @@
       border-radius: 20px;
       padding: 16px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      font-size: 16px;
     }
+
     .summary-card {
       display: none;
       padding: 14px;
@@ -86,42 +90,56 @@
     }
 
     .summary-card h2 {
-      font-size: 17px;
-     margin-top: 0;
+      font-size: 20px;
+      margin-top: 0;
       margin-bottom: 8px;
     }
+
     .summary-card p {
-      font-size: 13px;
+      font-size: 16px;
       line-height: 1.5;
       margin-bottom: 0;
     }
+
+    .summary-card-initial h2 {
+      font-size: 20px;
+    }
+
+    .summary-card-initial p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
     .avg {
       background: radial-gradient(
-        Circle,
+        circle,
         #fceef6 0%,
         #e097be 86%
       );
       border-color: #1b0a49;
     }
+
     .positive {
       background: radial-gradient(
-        Circle,
+        circle,
         #f8edf3 0%,
         #d8bbd9 75%
       );
       border-color: #af3b8e;
     }
+
     .negative {
       background: radial-gradient(
-        Circle,
+        circle,
         #f8edf3 0%,
         #cad1ed 75%
       );
       border-color: #93afe8;
     }
+
     .mixed {
       background: radial-gradient(
-        Circle,
+        circle,
         #f9f4f7 0%,
         #f6d8bb 75%
       );
@@ -130,7 +148,7 @@
 
     .greeting {
       background: radial-gradient(
-        Circle,
+        circle,
         #fceef6 0%,
         #c0a0c0 86%
       );
@@ -140,7 +158,7 @@
     #result {
       white-space: pre-wrap;
       overflow-wrap: anywhere;
-      font-size: 12px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -164,7 +182,7 @@
       The positive summary will appear here.
     </p>
   </div>
-    
+
   <div class="summary-card negative">
     <h2>⭒ The Not-So-Good Stuff</h2>
     <p id="negativeSummary">
@@ -186,8 +204,10 @@
     </p>
   </div>
 
-  <!--<p id="status"></p>
-  <pre id="result"></pre>-->
+  <!--
+  <p id="status"></p>
+  <pre id="result"></pre>
+  -->
 
   <script src="popup.js"></script>
 </body>
