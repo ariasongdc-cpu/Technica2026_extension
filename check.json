@@ -1,792 +1,245 @@
 {
+  "name": "Steven Chadwick",
+  "slug": "chadwick",
+  "average_rating": 3.69,
+  "review_count": 101,
   "courses": [
-    "TLPL101",
-    "SPHL601",
-    "SPHL602",
-    "SPHL603",
-    "CMSC389N",
-    "CMSC125",
-    "CMSC320",
-    "CMSC125",
-    "CMSC131",
-    "CMSC320",
-    "CMSC395",
-    "CMSC125",
-    "CMSC131",
-    "CMSC132",
-    "CMSC395",
-    "CMSC125",
-    "CMSC125",
-    "CMSC131",
-    "CMSC398N",
-    "CMSC125",
-    "CMSC132",
-    "CMSC125",
-    "CMSC131",
-    "CMSC398N",
-    "CMSC125",
-    "CMSC132",
-    "CMSC398N",
-    "CMSC125",
-    "CMSC131",
-    "CMSC133",
-    "CMSC125",
-    "CMSC131",
-    "CMSC125",
-    "CMSC335",
-    "CMSC125",
-    "CMSC131",
-    "CMSC133",
-    "CMSC398N"
-  ],
-  "average_rating": 4.4731,
-  "type": "professor",
-  "reviews": [
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC389N",
-      "review": "Good professor. Class is ridiculously easy though.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2020-05-02T17:20:09Z"
+      "course": "MATH140",
+      "count": 60,
+      "avg": 3.45
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC389N",
-      "review": "I had Professor Gonzalez for CMSC389N and he was really nice. He was very accommodating and always willing to help. The content in the course is not very difficult but could sometimes be a little boring. Overall, I would recommend CMSC389N for those who are looking for a computer science elective.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2021-01-12T05:24:34Z"
+      "course": "MATH141",
+      "count": 24,
+      "avg": 4.67
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC125",
-      "review": "If you have the opportunity to take a class with Elias, I highly recommend you do it. He's very easy going and lenient with basically everything. He's a good lecturer and tries to make things interesting when they're not. Any extension requests are always accepted and honored, his email is always open, very helpful during office hours, and is overall a great person. The class was pretty easy, as long as you put in effort you can get a good grade. The coding in the class is pretty basic and if you have a little background you'll be set, even if you don't the assignments are very doable and he always explains things in detail during class. The rest of the class is about the tech field and is still relatively interesting, but there is one section of the class that's done on code.org and it's not really that interesting in my opinion. This class was my first one that was about tech and he made it a better experience than I could've hoped for. The only complaint was that there always seemed to be issues with my grades being wrong and assignments not being able to be opened (we used google doc links for a lot of them), but that's partially due to the TA's. This was the most annoying part of the class, but it's an easy fix if you talk to him in class or over email, he'll usually regrade it and give points back. Overall, I would take his class again in a heartbeat. ",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2022-05-16T00:30:31Z"
+      "course": "MATH432",
+      "count": 6,
+      "avg": 1.33
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC320",
-      "review": "Did a good job with the course although the content and lecture was kind of boring at times. Projects and exams weren't too bad.",
-      "rating": 5,
-      "expected_grade": "A-",
-      "created": "2022-09-08T18:43:52.463631Z"
+      "course": "MATH310",
+      "count": 2,
+      "avg": 5
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is a solid teacher, the lectures are not super boring, and he gives in-depth explanations. Plus when the exams were harder he would give a nice curve, he really seems to care. Find out which TA's are good, as that will make the class easier. The exams cover exactly what is discussed in discussions and lectures, always go to the discussion before a quiz/exam as they will drop helpful hints. No complaints",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2022-12-07T17:05:49.114396Z"
+      "course": "Unknown",
+      "count": 2,
+      "avg": 3
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is great, he makes lectures interesting and tries to interact with his students. He is always helpful and seems to enjoy answering questions. Elias understands his students and tries to make the class a learning experience rather than a testing environment. I really enjoyed his class, none of the lectures felt useless and the discussions helped me a lot too.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2022-12-09T00:19:04.179722Z"
+      "course": "MATH424",
+      "count": 2,
+      "avg": 4.5
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "He's the third CS professor I've had and he is by far the best. He's really good at teaching first year CS students especially if you've never touched code before. Not only does he explain the concepts really well, he spends most of lecture showing examples and actually reviewing code which helps a lot on projects. As long as you pay attention in lecture and go to discussion you'll pass no problem.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2022-12-09T16:21:48.958688Z"
+      "course": "MATH461",
+      "count": 1,
+      "avg": 5
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC395",
-      "review": "The class is just very chill in general when it comes to just talking about our experiences as a TA, and how we as TAs can better accommodate for students. He's extremely knowledge within pedagogy and education as that's his speciality and truly believes in helping students understand the material which I greatly respect. Overall, Elias is just an awesome guy to chat about a bunch of different things and he's very receptive to feedback. As for the logistics, there are some assignments ranging from in class assignments to two page papers but are very easy to complete as it's a reflection of our experiences. This class is definitely a no-brainer to take. It's an easy A+, a free credit, and an enjoyable one hour session mingling with other teaching assistants and Elias.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2022-12-10T03:45:16.640488Z"
+      "course": "MATH405",
+      "count": 1,
+      "avg": 1
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Pretty cool guy. He is very understanding and granted a lot of extensions. However, if you slack off you probably won't do so well. This class requires a good amount of effort/studying to do well. From what I can tell, he gives easier quizzes and homework than the other 131 professors but his midterms are more difficult. Came in with no cs experience and thought I was going to fail the class after the first midterm. He helped me work through some stuff and now I'm very confident about 132.",
-      "rating": 5,
-      "expected_grade": "B",
-      "created": "2022-12-11T03:57:06.723699Z"
+      "course": "MATH140H",
+      "count": 1,
+      "avg": 5
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "I thoroughly enjoyed 131 with Elias. The concepts can be challenging if you don't have previous experience, but Elias will make sure you understand the material. Lectures can be a bit boring at times, but nothing that is a big problem. Office hours are super helpful so utilize them if needed. As long as you start projects early, you will do fine. Elias is an excellent choice for 131 and is lenient with grading and assignments. Definitely would recommend.",
-      "rating": 5,
-      "expected_grade": "A-",
-      "created": "2022-12-14T01:54:16.213173Z"
+      "course": "MATH402",
+      "count": 1,
+      "avg": 5
     },
     {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "I enjoyed Elias's class. His lectures were kind of slow, but if you go to all of them you will definitely pass. He explains concepts really well, and strongly encourages students to ask questions about things they don't understand. The projects were a good level of difficulty; I didn't find myself struggling too much as long as I started early and went to office hours. The only part of his class that I had an issue with was the exams, I felt like they were pretty inconsistent. The first one was of comparable level of difficulty to  first exams of other classes, but the second one was way too long, and I the third one was overly difficult (at least for me). However, I'm sure this is a side effect of it being his first time teaching this class, so his exams will only get better from here. Definitely recommend you take Elias if you get the chance.",
-      "rating": 4,
-      "expected_grade": "A-",
-      "created": "2022-12-15T00:06:14.700592Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "HIghly recommend him. He goes over the concepts of this class very well. If you are a cs major, which I'm assuming you are if you're taking this class, I recommend taking it with him because it will build a good foundation for cs. Exams, quizzes, and projects become so much easier when you actually understand the material conceptually. He does many examples throughout class of every new unit we learn. His style of explaining and teaching makes it so simple to understand what he is saying. If you do not know any cs, you will be fine in his class. He is also very very nice so if you talk to him after class or go to his office hours, he will help you a lot.",
-      "rating": 5,
-      "expected_grade": "A-",
-      "created": "2022-12-15T01:25:13.813674Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is a great teacher, he is a very down-to-earth guy and definitely puts students first. His class was not too difficult and the pace of the class and lectures were great.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2022-12-15T23:37:13.744194Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC395",
-      "review": "Easy A, good prof",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2022-12-17T05:58:59.461801Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC125",
-      "review": "Super chill and lenient professor. You learn a lot and it should be an easy A if you do the work.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2022-12-28T19:59:58.991473Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC395",
-      "review": "He is a very nice prof.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2023-01-04T02:27:41.010863Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is a great professor, very lenient, open, helpful, and genuinely wants you to succeed; if you have him, do not be scared to talk to him if you are having trouble in his class. He made lectures relatable and engaging, you could even submit a picture of your pet, and he would put it on the slides the next time we would have a lecture. \r\n\r\nThe reason why I am giving 4 stars though, is because of certain TAs. Later in the semester, I began to realize that TAs that do not teach discussion was not helpful at all. I would often find myself and other students at office hours staring blankly at our code because we would be more confused after asking for help. A certain TA though, Takeshi, who would be at office hours in the morning had a terrible attitude towards students, there would be times when he would make comments and snarky remarks that discouraged me from even attending office hours in the morning. I hope no other student had a similar experience to what I did but I prefer TAs who teach discussion for help with coding projects.",
-      "rating": 4,
-      "expected_grade": "B",
-      "created": "2023-01-08T02:21:25.657330Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is down-to-earth, lenient, and very smart. His lectures are well planned out and very informative. He's very easy to approach about issues your having with your code (or anything really). He gave someone in our class an extension on half of the projects because their computer got bricked earlier in the semester. One complaint I have however is that he sometime does not respond to emails but that's what piazza is for so it is not too big of a problem. I made sure to take CMSC132 with him next semester.",
-      "rating": 5,
-      "expected_grade": "A-",
-      "created": "2023-01-11T22:05:41.934211Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "His lectures are kinda useless (records them too) but Elias is a fabulous instructor and really cares about the success of his students. Class isn't too hard. Make sure utilize office hours if you need help.",
-      "rating": 5,
-      "expected_grade": "B+",
-      "created": "2023-02-09T20:39:02.483102Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "I want to disagree with a lot of these reviews about Elias. Don't get me wrong, he's a super cool guy and very supportive/understanding of his students. However, his teaching methods suck. His lectures are absolutely useless because his teaching style is just so jumpy. He doesn't go deep into what he's talking about and only provides a super shallow and confusing explanation of a concept. I feel like we haven't learned much in class. We've been learning more from YouTube videos than lecture themselves. I've heard Fawzi is better because he can clearly explain things and says it in a way that actually makes sense.\r\n\r\nOverall, the class is easy, but it's just annoying that he doesn't teach well. I guess that's going to be every CS class from now on, (especially seeing the reviews on CMSC351).",
-      "rating": 2,
-      "expected_grade": "A-",
-      "created": "2023-03-08T04:06:00.344172Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Professor Elias was a fantastic teacher. He genuinely sounds passionate about the things he's teaching and most often is able to explain in a way that anyone, even students who have never taken a programming class before, could understand. We had 3 midterms which were curved according to class averages and, with a certain exam, Professor Elias recognized that it was too long to be finished within the given time constraint so the class was given extremely lenient grading.\r\n\r\nWe also had about 8 programming projects which were actually pretty difficult despite being an intro-level CS course. You are however given a generous timeframe to complete them (about a week or-so). I definitely recommend taking Elias.",
-      "rating": 5,
-      "expected_grade": "B+",
-      "created": "2023-03-10T20:58:59.388034Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Super chill, exams are reasonable, easygoing professor",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-04-30T03:04:43.378624Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Hands down one of the best CMSC teachers, if you get the chance to take him take it. Super helpful, and will explain and answer questions . Lectures are interesting and recorded in great quality, his office hours are very useful and he will help you and link you to valuable resources. His tests and projects are very fair, and often link with what Nelson is doing. Ta's can really help you out, but overall he is just a great guy. He taught high school before and doesn't care if the exam scores are high, he also curves and gives bonus points on exams and projects. Great guy, and his exams, lectures, projects, and overall class are a billion times easier and more interesting than Fawzi's. Elias GOATzalez",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2023-05-01T18:18:16.714516Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Elias is one of the best professors I\u2019ve ever had. He genuinely cares about his students and their success in his courses. If he makes a mistake he holds himself accountable and will not penalize you for it and in fact it will most likely benefit you. The lectures are useful and he will provide great examples which really help you learn the concept. He also gives out fair exams that you will do well on if you study. His TA\u2019s are really really good. Specifically Hana, Dominic, Ipsa, and Tanaya. They all will go out of their way to explain things if you don\u2019t understand something and work hard to provide the best assistance. There\u2019s only really one TA that is unhelpful. Regardless, if you get the chance to take Elias for 131 or 132 you 100% should.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-05-01T21:25:04.313472Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Good teacher. His projects are harder than Fawzi or Nelson and his exams can be inconsistent and confusing sometimes, but he's a very nice professor. Lenient with extensions. Only downside is some of the TA's in this class can be condescending or rude to students sometimes. The discussions are also pretty useless or boring at times; in my discussion most students don't even bother to show up unless there's a quiz. Overall not a bad class, mostly due to Elias being an understanding and fair teacher.",
-      "rating": 4,
-      "expected_grade": "",
-      "created": "2023-05-02T21:28:06.621482Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Elias is a nice teacher, but overall his projects are harder than Fawzi or Nelson projects in my opinion. He is also very lenient and understanding. The one issue is with the TA's. Certain TA's like Hana, Dominic, etc. are all very nice, but there are some exceptions to this. There's one really condescending and rude TA, he's been named here for a 131 review before, and mentioned without a name on another review.",
-      "rating": 4,
-      "expected_grade": "",
-      "created": "2023-05-02T21:38:34.219184Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Best CS professor ever!!! Very chill, records all his lectures, can use three 48-hrs extensions among all the projects per semester (but if u email him, he will grant u more). Very reasonable and flexible.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2023-05-04T16:24:24.072732Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Best CS professor ever!!! Very chill, records all his lectures, can use three 48-hrs extensions among all the projects per semester (but if u email him, he will grant u more). Very reasonable and flexible.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-05-04T16:24:46.997086Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Elias is great. His projects are literally the same projects as Nelson's, so I don't really understand what the review below me is talking about. However, it's true that his project descriptions are unclear (for example, due dates contradict with each other in the title and in the body paragraph). He doesn't respond to emails sometimes, but literally GO TO OFFICE HOURS!! I only started going after some midterms and I really wish I'd visited from the beginning of the semester. He's very accommodating in-person. Just be honest about your reason for an extension, make-up, or grade concerns, and Elias will do his best to help you. \r\n\r\nIn terms of lecture, I honestly preferred him over Nelson because they're fun and engaging, but not straight up stand-up comedy. That way, I was able to come out of lecture with understanding of the material instead of several concerning (yet still funny LMAO) jokes. \r\n\r\n(Regarding my expected grade -- I got 0s on a few project assignments because I'd been struggling to get my grade up for MATH141 (UGH) so I just messed up on those. Before taking a 0, make sure to talk with Elias. This was my biggest mistake y'all... Don't do what I did! My other project grades were all solid 95s-100s, so you really would be helping yourself by talking to the instructors.)",
-      "rating": 4,
-      "expected_grade": "C+",
-      "created": "2023-05-08T20:26:42.834040Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Insanely nice, projects were the same as nelson, but he made the class super enjoyable. He had some really good TA's, office hours were super key before exams. He was very reasonable and ha just moved up from high school. Take him if you can",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-05-11T00:29:56.396544Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Gonzalez is a very nice person and one of the most down-to-earth professors I've met at this school. Despite this ,I feel as though his lectures at times can be subpar in terms how he teaches the content. But with a combination of good TA, I think most of them are good but apparently there is one who isn't, and taking at least a little bit of time to go over concepts you might struggle with (either office hours or self studying), you should be good. Projects were never to hard as long a you take time to understand the concept and work on them consistently. His exams were definitely a curveball from how you would expect a CS exam to be like, but I think they are really good at forcing you to understand some of the topics conceptually and I think this is reflective of his teaching style. I think the lack of practice exams compared to 131 may also be a bit of a shock. Overall a pretty good professor and class.",
-      "rating": 4,
-      "expected_grade": "A+",
-      "created": "2023-05-11T02:47:41.552330Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "This dude is such a goat. His lectures are amazing and I can always relate to him since he\u2019s not old and weird. He is also such a NICE AND CARING person. Class is very straight forward. Same with the projects. Take him",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-05-16T04:43:47.709184Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "His reviews are true. He is very very good. I had him for 131 and 132 both. He is an amazing teacher and makes the class very engaging. I looked forward to his lectures. The class is not that hard. If you put in the work, you can do well. He does not throw any trick questions on the quizzes, tests, or projects. It is all straightforward.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-05-17T18:27:45.966460Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "DO NOT HAVE UME HABIBA as a teacher assistant. SHE IS THE WORST. You will teach yourself everything. if you go to office hours, just know you will be helping yourself. She says i dont know; i dont think so. Then it actually is. like how are you so clueless. Elias says one thing will be on the exam then it is not. He says this won't be on the exam; it is on the exam. like, come on bruh.",
-      "rating": 1,
-      "expected_grade": "",
-      "created": "2023-05-20T00:58:27.023594Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Gonzales is actually not a good professor.\r\n\r\nI wish I had taken Fawzi instead and not trusted all of these positive reviews. \r\n\r\nGonzales is nothing but a copy of Nelson with a few twists. If you are given a choice between Nelson and Gonzales, then it would be better to take Nelson anyway. \r\n\r\nGonzales for the entire semester wore a face mask, even when coming to lecture. Evidently he cared a great deal about the risk of COVID infection. Also evident was that he did not care about this enough for his students, because the office hours room was a windowless room in the AV Williams Building with no ventilation in which students were supposed to go to be crammed as sardines. If there was ever a greater risk of infection, it was this place. However much Gonzales cared about his own health, he did not care enough about that of his students to get a different room for them. \r\n\r\nWith regards to the projects, the only advantage over Nelson was that the first deadline would not cost you points if you missed it, but was rather just extra credit. However, the extra credit would barely be one or two points. I doubt that it would be enough to swing your grade by any significant amount either way. \r\n\r\nGonzales cannot lecture or teach well at all. His teaching style is terrible, with no continuous train of thought. \r\n\r\nHis slides are atrocious, with the code lacking basic things which he asks for in the same projects such as proper indentation and variable names. You are far better off using Nelson's slides for the subject. \r\n\r\nI stopped going to his in-person lectures early in the semester. I could not understand anything. He records his lectures anyway, so you can be confused at home instead of in the lecture hall.\r\n\r\nOffice hours were brutal and a complete mess. It was common to find a ten-person line of students for two TAs who were in attendance. \r\n\r\nIn any case, Gonzales would go to bat for his own TAs. He seemed to forget that this class was being run for the students and not for his teaching staff. He allowed them to cancel and reschedule their office hours however much they wanted.  You might end up in desperation at office hours, only to find out all the TAs cancelled last minute.\r\n\r\nBecause of the extreme latitude Gonzales gave his TAs, they abused it to the point where you would have days where there would be zero TAs at all, followed by days when there would be three or four TAs all at the same time. Never present when you actually needed them, of course. Most of the time, there would just be one brave TA (Dominic) holding down the fort reading through some crummy Google Doc office hours queue system instead of something respectable like the Quuly that Nelson used.\r\n\r\nOut of desperation I just stopped going to office hours. It was less effort for me to spend the weekend holed up in my room, than to waste time during the week trying to get a few minutes with a TA who would never show up. \r\n\r\nWhat was also frustrating was the sheer number of typos that Gonzales is capable of. During the final exam, he actually had to pause time for him to go through them. \r\n\r\nOn the second exam, he gave us some hashing question with some ridiculously large calculations. He realized that we were wasting our time on them and put up the values of the calculations on the projectors. Good luck if you were one of those people who had already wasted large amounts of time during the exam calculating things by hand. \r\n\r\nThis kind of flip-flopping and lack of consistency was typical. For instance, he allowed, then banned, then allowed again notes while doing the quizzes. \r\n\r\nGonzales provided little support for his exams. His \"practice questions\" would be mostly unrelated to the final exam and hopelessly RIDDLED with errors. You will spend more time trying to figure out what is wrong with the question than actually answering it.\r\n\r\nMost frustratingly of all, Gonzales always REFUSED to do the common-sense thing and provide answers to his own sample questions. He would constantly tell us to crowd-source answers on Piazza. Which of course, never happened. At least had past exams WITH SOLUTIONS that you could practice with which would make things dead easy. \r\n\r\nGonzales' communication was just very snarky and condescending in general, although he was decent enough in person. You will be going to him in person often, because he often does not resopnd to email. He would write things like \"as a treat for you all there will be no lecture today\". I wonder what that implies about his own evaluation of his own teaching. \r\n\r\nDiscussions were really depressing. My TA in particular would give a confusing explanation, then react sharply to the most innocent clarifications.",
-      "rating": 2,
-      "expected_grade": "B",
-      "created": "2023-05-20T23:55:03.237755Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC125",
-      "review": "Perhaps the most caring professor I've ever had. Makes class engaging and is super attentive to the feedback of his students. Workload is manageable and work is straight forward.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-05-21T22:56:03.783141Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC125",
-      "review": "Great professor, class was engaging and he was approachable and helpful",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2023-06-01T15:08:08.724644Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "So good!! Elias is so understanding and his exams are fair. He records his lectures so I learned by watching the recordings and they were really helpful.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-06-04T02:47:31.597011Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "I had Elias for both 131 and 132. He is an excellent professor that all should not hesitate to take. He is helpful, responsive to emails, and cares about all the students a lot. The reason I gave a 4 star despite giving him a 5 star for 131 is for two reasons. First off, my TA was terrible. If you get a bad TA consider going to a different section. My TA was not very knowledgeable and discussion was a waste of time. Also, throughout this semester I felt that Elias' lectures tended to be very boring. Besides these two semi minor details, Elias is excellent and deserves a 5 star rating.",
-      "rating": 4,
-      "expected_grade": "A-",
-      "created": "2023-06-04T17:54:43.904596Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Very nice and down to earth teacher. He was a CS student here not too long ago, so he is understanding if you talk to him. Knowledgeable on the subject and generally prepared. Explains topics well. The projects aren't too bad, but it wouldn't hurt for him to be a little more specific at times. Same goes with the occasional poorly written test question. But I believe these are largely due to him being a newer teacher and I'm sure he will improve as time goes on.",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2023-06-25T18:10:21.640869Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Elias is a good person. And he is who you want if passing the class is all you care about. However, if you want to have a deep understanding of the content, you probably shouldn't go with him. He has a lot of positive reviews because people tend to remember not what you do but how you make them feel. Elias is a poor lecturer and made mistakes on nearly every exam and project we had. He was too lenient on the TAs to the point where most of them basically weren't doing their job. His study guides are also misleading. This is due to him adding topics to previous study guides and calling them new. For example, he had concepts from the beginning of the semester and even from 131 on the study guide for the 3rd midterm. And, big surprise, none of those old concepts were on the midterm. But everything on the study guide is \"fair game\" for the exam so it can be confusing to decide how you should spend your time studying. BUUUUUUUT, Elias has a really great personality and is EXTREMELY forgiving and just wants to see you succeed. He makes you feel good as a student. That's what people tend to remember. And that's why his reviews are so good. I would try to get him if you struggled in 131 or are still unsure about pursuing CS beyond 132.",
-      "rating": 5,
-      "expected_grade": "B",
-      "created": "2023-11-01T20:14:52.912175Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is a great lecturer who explains all of the topics very thoroughly. He's kind, has a great sense of humor, and is always willing to help if you don't understand certain topics or need help on a project/assignment. He's also a relatively younger lecturer here and is a UMD alumnus himself, which is a huge plus for freshmen adjusting to campus. It does take a while for him and his TAs to grade certain assignments, but that's perhaps the only drawback I can think of. I 100% recommend him for CMSC131 and plan on having him for CMSC132 next semester!",
-      "rating": 5,
-      "expected_grade": "B",
-      "created": "2023-12-05T23:12:05.452550Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Really nice guy, but can't comment on lectures because I didn't go at all. Office hours are helpful, he's understanding and will take the time to help you. He tends to make mistakes on assignments and exams, which is annoying but not a big deal. Start projects early and you shouldn't really have a problem finishing them on time, and he gives 3 48 hour extensions. Exams are pretty fair but the study guides can be a bit confusing. Class really shouldn't be that hard if you have prior experience or just make sure to not fall behind.",
-      "rating": 4,
-      "expected_grade": "A+",
-      "created": "2023-12-09T21:05:02.067162Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Coming into 131 with somewhat prior knowledge of coding, I'd say Elias did very well with this class for Fall '23. Even though many other reviews seem to be shaky on Elias with his lecture style, frequent mistakes, glaring problems, etc, they seem to have been very much improved over this semester. While there were indeed still some typos on exams and quizzes, they were almost immediately addressed. Though while it would be better to see none, I assume it's going to be improved as time goes on as this is his second time teaching 131 (based on when reviews started for him). He is very humble, kind, funny, and like others have said, down-to-earth, especially being the product of UMD CS this past decade. Elias seems very passionate about teaching this course at his alma mater so I don't doubt his classes will only get better. His practice exams are extremely similar to the real exams, which have been very helpful studying tools! His office hours are also very chill and has no trouble explaining concepts or even just having a chat with him. I'll post another review of him in the spring as I will also have him for 132!",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-12-15T04:07:36.022285Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "GOAT!!! Very helpful with everything and all TA's are great. Open note quizzes and group labs make maintaining a good grade easy. Midterms weren't to challenging and the final was extremely easy.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2023-12-18T03:32:20.807731Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Prof. Gonzalez is a sincere professor and truly wants his students to succeed, which is something really rare. He tries his best to make computer science fun and interesting and isn't just a boring coding lecture like most other professors. He is really understanding and accommodating to students' situations. He is thoroughly a good person.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2023-12-19T21:59:47.742653Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias was about as good as a teacher as you could hope for. CMSC131 will be a bit challenging if you have no programming experience but he did a good job explaining the concepts and was happy to re-review things if you asked. \r\n1/2 weekly discussions are required because he will give you a 'lab' to write in class, which is graded. Otherwise, discussion is completely pointless, Elias is very lenient with TAs, and honestly, TAs weren't very helpful with questions either. Use piazza to ask for clarification on projects because it will be much quicker and more accurate.\r\nElias is also super responsive and is happy to talk to students so feel free to drop in to office hours.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2024-01-04T04:01:41.733854Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is a great lecturer and professor overall. As someone for whom this was their first ever cs class, it was a bit overwhelming, but going to his and the TA's office hours is a huge help and will come easier over time.",
-      "rating": 5,
-      "expected_grade": "B",
-      "created": "2024-01-05T03:26:28.824798Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "The class itself was really easy in my opinion. Elias is very helpful and actually teaches in his lectures. He even lets you know what topics will be converted in the midterms. This semester, he didn't make any mistakes (other than an occasional spelling error or something on an exam or quiz), but made the class very manageable and easy to pass. His TAs and office hours are really helpful and he is a great guy. \r\n\r\nTLDR - amazing teacher and easy class, take Elias if you wanna pass :)",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2024-01-18T04:17:42.959947Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Pros:\r\n- Really sweet professor,  nice, younger\r\n- Knowledgable, definitely knows the subject well\r\n- Exams are relatively easy, provides some practice\r\n\r\nCons:\r\n- Not responsive to emails\r\n- His lectures aren't super detailed at times. He goes over topics, but skips over on some of the smaller details that exam questions specifically test. It will fall upon you to fill in gaps of your own understanding.\r\n- He posts Nelson's past exams and a few of his past exams but doesn't post the solutions to his until last minute.\r\n- TA resources are decently inadequate. OH system is disorganized (and quite frankly not long enough), TAs don't respond to Piazza posts in timely manner",
-      "rating": 4,
-      "expected_grade": "",
-      "created": "2024-03-09T22:57:24.092928Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "He is a really nice professor and knows the material he is teaching. As a student coming in with no previous knowledge about java and had cmsc131 with Nelson, I think that Elias is pretty bad at explaining the topic since most of the time he would simplify too much of the topic that students will only know the basics of how a function works, but they would not have enough knowledge to actually code it. He barely goes over the lecture code and does not explain what the code does, which makes it hard to understand when he talks about it.",
-      "rating": 3,
-      "expected_grade": "A-",
-      "created": "2024-04-18T03:23:13.780736Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "I google \"GOAT\" and it took me here. But seriously Elias is an excellent instructor. He makes learning fun and his classes are very enjoyable. He truly wants to see you succeed. Open note quizzes, relatively easy exams, and he uses Nelson's projects and they're not too bad. Lectures can feel kind of useless at times and you should prioritize reviewing the material outside of class. Tbh, I've been to maybe 7 lectures all semester and have been putting in medium effort and I have a 97%. Take this class with Elias, he's probably better than anyone else teaching it except Nelson (depends on who you ask).",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2024-04-24T16:17:00.178523Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Pros:\r\n- Understands content well, easy exams for the most part\r\n- Willing to help & cares\r\nCons:\r\n- Not responsive to emails at all\r\n- His lectures are extremely bare bones and often inadequate for learning\r\n- He has limited practice material and is very late at posting keys\r\n- Office hours for TAs are disorganized and usually pretty useless",
-      "rating": 3,
-      "expected_grade": "A-",
-      "created": "2024-04-24T17:34:25.066478Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "He is great but not the best at teaching and his class can be hard to take notes. though he does recorded his lectures.",
-      "rating": 4,
-      "expected_grade": "C+",
-      "created": "2024-05-07T16:35:14.881871Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "He has some flaws, but I honestly don\u2019t these issues are serious enough to take him down to a 4-star (he\u2019s often very late to respond to emails, but there are a lot of opportunities to talk to him in person and TAs are also very helpful in most cases). He\u2019s incredibly nice and understanding. Exams are easy if you look at his study guides and practice exams. Great CS professor!",
-      "rating": 5,
-      "expected_grade": "",
-      "created": "2024-05-07T19:11:29.566585Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": null,
-      "review": "Honestly, the best teacher out of the ones available for 132 by far. His lectures are pretty good. He clearly knows the subject very well and is knowledgeable. His exams are very, very fair. He is also very understanding if you need extensions for projects and such. HOWEVER this man is not responsive to emails, if you need to reach him goodluck. Additionally, he says he will do things, for example, put out the answer key for a practice exam, and he never does it when he says he will; he always releases it at the last minute, which is very annoying, but otherwise, he is a good professor.  If you come in with little to no programming experience, expect a B or a B plus in the class if you're working very hard. If you have had previous experience, you can easily get an A.",
-      "rating": 3,
-      "expected_grade": "B+",
-      "created": "2024-05-13T17:17:56.015824Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "This was a very messy class. I want to deal with the Pros/Cons, and I hope this will be helpful to anyone considering Elias in the near future\r\nPros:\r\n-Elias is an incredibly kind and understanding professor. His office hours are accessible. \r\n-Projects are constructive and pretty free reign. I enjoyed them. The free reign thing seems to lead to weird grading disputes though.\r\n-Quizzes are somewhat open-note and straight-forward. \r\n-Exams are not too bad in the scheme of things. Final exam is a little less cumulative than you'd expect.\r\n\r\nNot A Pro or Con?:\r\n-His lecture style is informative, but somewhat boring and a bit too focused on singular problems. A lot of lectures had ~50% of time allocated to going over one example.\r\n\r\nCons:\r\n-You will NOT get a response in emails and Piazza is 50/50. \r\n-There is a good chance you will need to address some sort of errors in this class. I had 2 separate TAs give me 0/100s on distinct projects without thought due to their own lack of care and technical difficulties only to go through the regrade process and get 100%s on both. It is hard for me to not place some blame on the lecturer for this when it occurs multiple times.\r\n-The practice exam keys he makes are full of errors and sometimes even the exams had confusing/outright incorrect information on them. \r\n-Elias himself sometimes sends a hundred different mixed signals on things like which concepts will be on the exam.\r\n-Discussion sections are full of labs. It got tiring and non-constructive at certain points. They should have been spaced out a bit more.\r\n\r\nI am very mixed overall about my experience in this class. He is still probably worth taking over Hogan/Yoon if they're teaching. I believe in the future he will iron out these \"growing pains,\" since he is relatively new and pretty young, but for now, I cannot justify a score above a 3/5.",
-      "rating": 3,
-      "expected_grade": "A",
-      "created": "2024-05-13T18:44:45.741281Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Professor Gonzalez is a great teacher who keeps the classes interesting and understandable, especially during more complex lectures. He has a great sense of humor and keeps things casual with students to limit stress and tension. Quizzes were made very easy since we could write a sheet of notes prior and use it during the quiz. All lectures are recorded, making it easier to review for exams. The only issue I had was that he taught TAs the material in a different way than he taught current students, making it challenging to determine certain problems were meant to be completed. Besides that, I would definitely recommend Gonzalez.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2024-05-17T18:18:33.719606Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Elias gets great reviews because he's nice and his exams are relatively easy, but that has made him overrated as a teacher. The biggest issues are that he is very disorganized and has a bad TA system. Elias is not responsive to emails and often makes mistakes in his work, even on his own answer keys. On Piazza, the wait time is often very long even right before project/exam dates because the TAs are slow and also seem to cancel office hours all the time. He needs to keep them on a tighter leash, because the contrast between this and Nelson's class is crazy. Additionally, his slides aren't detailed and gloss over important info, and he screwed up a LOT when we were covering topics like hash tables and tree traversal. However, he is very helpful and articulate when you talk to him individually, so I think the potential to be an excellent professor is there if he cleans up the issues with more experience.",
-      "rating": 3,
-      "expected_grade": "A-",
-      "created": "2024-05-17T20:25:31.303095Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "great professor! you do have to put the work in if you want to do well (going over lecture code yourself, redoing labs/worksheets, etc) but Elias and his TA's are really helpful in office hours. Also occasionally drops hints about exam questions which is helpful. Exams/quizzes are pretty easy too as long as you understand the material.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2024-05-18T15:33:54.329612Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Pros: Elias is a great lecturer, and I'm really glad I took 132 with him. His teaching style really clicked for me. When learning data structures, he would give us time to practice drawing out the structure ourselves. He's very clear on what topics will be on the exam, and they were overall fairly easy (80s averages). He also has his and Nelson's previous exams for practice. Lectures were really engaging, and Elias was always helpful during office hours. He's also a very understanding person and always wants you to succeed in class.\r\n\r\nCons: Lecture pacing is fairly inconsistent. In the first half of the lecture, he puts a lot of time and care into helping us understand the core material. However, the final third of the lecture feels kinda rushed. He takes a long time to respond to emails and usually doesn't post the solutions until the day before. Some of his lectures do lack some detail, it was sometimes difficult for me to start my projects. \r\n\r\nOverall, the positives for Elias heavily outweigh the negatives. I strongly encourage taking him for 131/132 if you can; he's awesome despite some organizational issues.",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2024-05-18T20:42:15.935636Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "For reference, I review all my professors, and my average review is 4.2, 4.13 weighted by credit.\r\n\r\nSingularities/Unique because:\r\n- 3 \"late tokens\" on projects. Submit 48 hours late thrice a semester for no penalty. Outside of those, submit on time or get a zero (dw, extensions are a thing).\r\n- 3 75 minute exams, which including the final only weigh 50%.\r\n- About 15 labs and quizzes, all in discussion (go to discussion). \r\n- In his early-mid thirties\r\n- Lots of office hours\r\n\r\nYou will probably like:\r\n- Genuinely a good human being, is understanding, does actually want you to succeed\r\n- Can actually have a conversation about normal topics you would talk about with your friends (apologies to Arsenal fans)\r\n- Funny guy, you'll stay engaged during lecture, though he manages to have time to start classes off topic and the occasional tangent during boring topics\r\n\r\nYou may be frustrated by:\r\n- He is still learning how to properly conduct a class on his own, meaning:\r\n- In an (successful) effort to increase discussion participation, Elias structures the class so that all but 3 discussions had graded work. \r\n- Directions/instructions will often be unclear\r\n- Majority of projects will be borrowed but don't always line up with what he's taught. Original project(s) you get from him may still be rough around the edges.\r\n- Covers a lot of content compared to other 132 options, but at the 30,000 foot level (see below reviews)\r\n- Intentionally doesn't cover stuff at times so that you practice it in the corresponding project. Makes it clear when/why he is not, at least.\r\n- Lack of cohesion between Elias and TAs. He keeps most stuff under wraps to avoid leaks, but this has its costs, like conflicting answers to the same question, or no answer at all from TAs. People who TA for Elias are all very kind people, but they're also put in a bad spot by his system (they don't recommend :))\r\n\r\nThink of it this way: If we had to teach a college course ourselves, we would all be worthy of a 1-star review after our first year. In just a few years, Elias has earned himself a 3 from me and an overall 4.5 star, and you'd think it's only getting better as he settles in. Yes, he was far from my favorite professor this semester, but I have patience and faith that he will improve in the coming semesters since he is committed to doing better, and hopefully this review will be outdated in a few years.",
-      "rating": 3,
-      "expected_grade": "A",
-      "created": "2024-05-21T14:56:06.554516Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "The course is well structured and the projects were very good. I went to all of the lectures but didn't really learn much from them, since Elias's teaching style just doesn't suit me very well. However, Elias is very nice and understanding. He provided good resources to prepare for exams, and exams were graded very fairly.",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2024-05-22T06:02:05.166985Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Pros: Elias is a really sweet professor and imo is a better lecturer than Nelson (whom I had for 131), as he tends to stay on topic better and is a very clear speaker. He's also very young, so he understands situations that come up very well. All of the exams were very easy including the final, and this semester he used MCPS grade rounding (so an 89.5 became an A- rather than a B+), which was very nice of him in an easy class. He also has ample extra credit opportunities on his projects, and he gives a free point on all the exams. \r\n\r\nCons: He will often say he'll post something (study guides or answer keys) on some day, and it won't actually be posted until several days after the date he said he'd post it on. He doesn't go over lecture code really, it's mostly theory. This may be problematic in labs where you need to write code you haven't learned yet. Also, piazza for this class (response-wise) is pretty dead. Nelson's 131 piazza was consistently answered/active, but Elias' wasn't.",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2024-05-22T14:21:36.617562Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Nice guy but he teaches very surface level and doesn't go into much detail, leaving it on you to figure out. He will bat for his TA's and always take their side when a problem occurs and has a bit of a superiority complex. He thinks he is the funniest guy out there but really his jokes are not so. His exams are comparably easily, but the 3rd one was very hard as little time is spent on data structures in his class. He really overemphasis  other \u00a0concepts while this class mainly a DSA in java. Gives very little practice. \r\n\r\nHe gets people to like him and seems nice which is the reason his rating is high. \r\n\r\nProjects are mostly Nelsons with a twist making them harder than they need to be. Very little instructions are given and there is very little direction given\u00a0, something needing to rely on the public tests to even figure out what is happening. TA's can even really debug during office hour and only give you knowledge that you know most the times. (Best TA's are Enric and Dominic by far)",
-      "rating": 2,
-      "expected_grade": "B-",
-      "created": "2024-06-12T18:42:58.717358Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Elias is a rather nice person but his teaching style is jumpy and all over the place. He tends to teach the material at a very surface levels but his projects require extensive knowledge of the material. His projects tend to by copycats of Nelson and/or Fawzi with a twist making them much harder with little to no direction. \r\n\r\nHe can be quite a confrontational person and always bats for he's TA's. He always claims their right and never listens to here your thought. His office hours are disorganized and TA's can help much giving very little surface help most of the time that you could have figured. He gives practice but it's also surface level, though his exams are easier than others . He constantly forgets to update information and has typos all over the place. \r\n\r\nHe also has favorites and will exclusively only write them rec. letters because they suck up to him. His rating is much higher due to how likable he can be with the masses, but his teaching is subpar and disorganized. If you have the option, take Nelson or Fawzi. Otherwise you are probably stuck with him.",
-      "rating": 2,
-      "expected_grade": "B-",
-      "created": "2024-06-23T17:27:32.350461Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "You can tell that Elias is familiar with the topics he is teaching and is a knowledgeable person, but it doesn't seem like he knows how to explain them properly. A lot of times, he would explain the data structures or the algorithms but it would all be so theoretical that I would be lost on how to code it. I liked that his exams, quizzes, and labs would focus more on the theory and concepts. Overall, had a great semester with him!",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2024-06-28T10:39:19.565168Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "READ THIS IF YOU ARE PLANNING TO TAKE ELIAS! \r\nElias is a good professor, especially for beginners. His teaching style is effective, but projects get progressively harder, making it tough to rely solely on lecture material after the second project. Start your projects early and use all available resources, but avoid using AI or copying answers, as it will waste your time. \r\n\r\nElias provides study guides and practice tests that closely resemble the exams. While attending lectures isn't essential\u2014especially at the start, as they can feel slow\u2014you should still review the recordings since they cover expectations or rare cases in Java that you will need to know for exams. \r\n\r\nTL;DR: \r\nProjects are time-consuming; start early and use all resources (don\u2019t cheat or use AI). Elias is a beginner-friendly professor\u2014attend lectures if you're new to coding, but if you\u2019ve taken a AP CS class or have experience programming, just watch the recordings.",
-      "rating": 4,
-      "expected_grade": "A+",
-      "created": "2024-09-26T22:25:25.921176Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Pretty good professor. He likes to make jokes to lighten the mood and go on side tangents. He explains concepts pretty well and has two 48-hour project extensions which are nice. He gives lots of practice exam resources, so definitely do them. One thing I will recommend is going to the TA office hours. A lot of people try to go to Elias directly which is good to make a connection, but with so many people, you can only be helped so much. The TA's are very helpful and can directly address problems with your code. \r\n\r\nThe project instructions may be a little vague sometimes, so start projects early so you have time to ask questions.\r\n\r\nOverall, Elias > other CMSC131 profs.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2024-12-03T18:52:00.276076Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Good professor. Even though I had some knowledge going in, I think he is a good professor for beginners. He explains concepts pretty well and gives a lot of good examples. The projects are definitely a little more complex than what is taught in lectures, but he also gives ample time to do it and lecture code is usually pretty good to learn from. TA's (shout out Jocelyn) are also very helpful and people use Piazza very often to ask questions you also have. \r\nI don't really have many negatives for Elias, I wish I could've taken him for 132 :(, but the mistakes on his exams can be really distracting and annoying like c'mon double check a little bit. Most exams are fair but he definitely tries to throw you off a little bit. Overall, easy to pass and Elias is a good prof.",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2024-12-05T00:08:38.442485Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Great professor. The only thing I would say though is that he does go through the material pretty fast and that during the mid-terms there would always be a mistake, but besides that he knows what he is talking about and is overall a great guy. There are 3 mid-terms (8%, 12%, 12%) and a final exam worth 18%. As long as you do well on the coding assignments, labs, and quizzes you don't have to score crazy good on these exams to get an A. btw he FILLS UP SO FAST for 132 because everybody knows he's a great professor, so if you are hoping to take him for 132 you can only hope that you have enough credits to register earlier than most.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2024-12-06T03:43:55.459884Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Intro:\r\ngreat professor and good guy; maybe not the best teaching ever but definitely good and would take him again\r\n\r\nPros:\r\n- very personable, friendly, \r\n- really liked labs/projects were generally not bad, sometimes had to ask a # of questions\r\n- piazza was good and my experience with his TAs were that they were responsive and helpful\r\n- practice exams get you somewhat used to the upcoming mid term - a little bit of the content/questions transfers over so I would definitely use them\r\n- grading expectation is clear and you can clarify with TAs/him\r\n- records his videos which is VERY HELPFUL for me\r\n\r\n\r\nCons:\r\n- sometimes the content feels all over the place; perhaps its not his fault necessarily\r\n- can rush through content or miss certain details, and sometimes we'll miss stuff during lecture that is somewhat important or pushed back\r\n- exams can be kinda tricky/work beyond what we were taught (or sometimes they'll have the problems that make you think beyond the content/examples we went in class)\r\n- didnt really respond to my emails but I didn't send many so\r\n\r\nNeutral:\r\n- sometimes goes on a tangent/off topic slightly during lecture but I think they're cool\r\n- getting grades can be slow\r\n\r\nconclusion/tldr:\r\n5/5 professor, would take again\r\ndont take the NUMBER of cons vs pros, I really like him as a professor, take him for sure",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2024-12-08T06:27:40.082145Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "TL;DR: He's a great guy and lecturer; He's very down to Earth and understands things like oversleeping lectures/discussions from time to time and is understanding. Really helpful, sometimes his lectures(and projects) are scattered but that's okay since his slides & review materials are great. Highly recommend him as your professor for 131, really ease you into college life or something.  \r\n\r\nProjects: The projects are pretty easy, they shouldn't take you more than a couple hours. The only issue is sometimes Elias will be sporadic and assign one project that took sub one hour and then the next week assign one that is like 3 hours long. Also sometimes projects are due on like a Saturday or Sunday which is kinda meh, I prefer to have all my stuff done by Friday night but whatever. The projects are kinda fun though. \r\n\r\nExams: The exams are quite reflective of the old midterms (and finals too) so it is worth studying pretty closely to the given old midterm reviewers. I would also just practice a few things extra like a memory map(blegh) or writing a class or something.  \r\n\r\nQuizzes: The quizzes are fairly easy, open note and in discussion, Really just take a few notes with like 30 minutes of actually going over the material and you'll be good. Elias also drops the lowest quiz grade so it works out. \r\n\r\nDiscussions: from what I've heard, it's really dependent on the TA's whether the discussions are helpful or not but in my case it was really helpful because my TA was excellent(thanks Hana!). Elias has us take a pre-test that matches us with discussion sections so if you're not confident... idk maybe tank that pre-test and get a helpful TA maybe, nah just try your best on it. We have in-discussion labs from time to time like 5 labs during the whole semester, but they won't tell you when the labs are so you should go... but they do drop 1 or 2 lab grades if you did poorly or missed it so there's that. \r\n\r\nExtra: the constant office hours from TA's really helps for figuring out stuff for your projects and Elias is always willing to help you out. btw on the exams he always ask you to draw something in the front or say something for an extra point or two before the exam.",
-      "rating": 5,
-      "expected_grade": "B+",
-      "created": "2024-12-14T05:31:13.430646Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Very good professor who records lectures and posts the slides on ELMS. He actively uses Piazza, where you can ask questions, view other students' questions, and get responses from TAs. This resource is especially helpful for projects. The practice exams are previous year exams which are good study for the actual exams. He does have some cons; his email responses can be slow at times, and the practice exam keys sometimes have mistakes. Fortunately, you can clarify these issues on Piazza. Overall, I 100% recommend him for 131.",
-      "rating": 5,
-      "expected_grade": "B",
-      "created": "2024-12-14T17:03:09.617229Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias is a good professor and a really nice person overall. He's very understanding and keeps his lectures interesting. Exams were fair, if not easy. He also dropped two quizzes at the end of the semester instead of just one because the class was struggling. He gives you more release tests than Pedram which is super helpful for projects, and you also get three late tokens. Definitely take him for 131.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2024-12-14T17:53:42.819179Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Background: I came into this class with no coding experience and did really well. I'm surprised with how much I learned in a short span of time. \r\n\r\nPros:\r\n- Very nice guy, not a bad lecture to have in the morning\r\n- Lots of time to complete the projects \r\n- Forgiving and beginner friendly class (you get three late passes on the projects and one quiz dropped. Also, quizzes and labs are open note)\r\n- Projects and lab were good practice for the exams\r\n- Practice exams were very representative of actual exams\r\n- records his lectures so you can watch them later\r\n\r\nCons:\r\n- Lectures were rushed or unclear at times but I don't think this is entirely his fault, coding doesn't really lend itself to being taught in a lecture format imo.\r\n- The final exam had a lot of mistakes which was kind of annoying especially since I took it in ADS and couldn't directly ask him.\r\n- This class has a lot of people so it can be hard to get help at office hours\r\n\r\nOverall I liked him as a prof and I will be taking him for 132 next semester as well. If you have the option to take Elias for 131 I recommend him.",
-      "rating": 4,
-      "expected_grade": "A",
-      "created": "2024-12-16T17:37:16.473684Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Finished with an A+. To keep it short and sweet, I think he is one of the best professors you can take for an intro CS class because he genuinely wants his students to succeed. He doesn\u2019t treat it like a weed-out class or make things harder or more complicated than they need to be. Every assignment, exam, and project is straightforward. His lectures are solid, and while some say he goes off-topic, I think the few minutes he spends sharing something interesting or personal keeps the class engaged\u2014especially for a morning lecture.\r\n\r\nThe only criticism I have is the constant mistakes on the midterms. One time is understandable, but after that, it was clear they weren\u2019t double checking the exams before handing them out.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2024-12-18T05:05:18.087188Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "I came into this class having taken APCSA but I still learned a lot of new materials and reviewed familiar ones. He's a very nice guy and has easy-to-follow lectures (recorded too). Projects are a good part of your grade so definitely do them well and you get a decent amount of time to do them. You get three 48-hour late tokens if needed, which I would suggest saving for the end of the semester when all your classes starts piling up. Quizzes and labs are open note. All of these are good practices for exams, and so are the practice exams themselves. Mistakes often show up during the midterm so make sure to look up every once in a while. I never went to office hours but I think they're a great help from what I've heard so I highly suggest going. He's one of the better CS professors for 131 and I'm also taking him for 132.",
-      "rating": 5,
-      "expected_grade": "A-",
-      "created": "2024-12-18T05:48:23.313815Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "I did not take Java courses in high school, so naturally, this was an adventure for me. I had to teach myself much of the content to fully understand everything in the course due to the fast pacing and teaching style of the professor. Be prepared for this weed-out class. Office hours were extremely helpful when I did not understand certain topics and needed assistance with the assigned projects. Some TAs understood me better than others, but those who did were great. So, look for which ones work the best for you. Speaking of projects, they were quite difficult and took a long time to complete. I will also note that we were only able to submit and test our code at certain times. However, we were given 3 late tokens. Discussions were helpful in that practice was given for the topics being learned. There were lab worksheets and quizzes but the lowest grades would be dropped, and the TAs would sometimes go through the labs and quizzes the next time we met, which further helped in understanding the content. We were able to work with other students at times as well. The lectures consisted of the professor going through his slides, which were oftentimes unclear and written in a complicated manner. I feel as though the topics could have been taught in a simpler way. He would then walk through code examples to give us a visual of what we discussed. There were 3 midterms and a final. They were graded harshly, but I did appreciate the fact that there were many past exams and answer keys, which resembled the actual exams. As for the professor\u2019s personality, I thought that he was funny at times and gave us helpful advice. Since he was closer to our age, he related to us. I also respected him allowing us to ask questions and speak to him, in and outside of class.",
-      "rating": 3,
-      "expected_grade": "B",
-      "created": "2024-12-23T18:29:56.108583Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Great Prof!! \r\n\r\nPros:\r\nClear voice, record lectures, is friendly, cracks jokes during lectures, explains material pretty well (in my opinion), and his tests do usually reflect what's taught in class. Also gives you enough time and resources to study! Labs are completion and projects are difficult enough to challenge you (in a good way) but not insanely hard or anything. He also has plenty of options for getting help which is nice. \r\n\r\nCons: Genuinely not many cons with him that are worth mentioning. Very chill guy to start your cs major with.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2025-01-07T19:46:21.994507Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": null,
-      "review": "Pros:\r\n- The lectures are recorded and slides are posted.\r\n- Exams are very similar to practice exams.\r\n- He makes jokes in class.\r\n- He is very easy to talk to and pretty relatable.\r\n- 3 48 hour extensions on projects.\r\n- He explains concepts well, and his lectures transition from topic to topic smoothly.\r\n\r\nCons:\r\n- Final had a lot of mistakes\r\n- Explanation of topics seems to be too shallow.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2025-01-28T04:41:49.840701Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "W teacher. He makes the class fun and is very lenient and relatable. There are 3 different 48 hour extensions but even when you run out of those, he is nice enough to let another one/couple slide.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2025-03-11T17:32:40.799751Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Elias was such a nice professor to have during my first semester of college. He teaches things well, is pretty funny and I usually felt prepared for exams. He\u2019s also pretty young so it feels like he actually remembers what it\u2019s like to be a student. He also set aside special office ours to talk about mental health with his students so it seems like he actually does care about his students. I unfortunately couldn\u2019t take him for 132 because the seats filled up instantly which should tell you how good he was.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2025-04-03T04:04:21.028995Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "Took him for 131 and 132, and I don't know what else to say that hasn't already been said. He will do everything he can to let you succeed in this class, and doesn't believe in the philosophy of weed-out classes. He's very lenient on project deadlines, especially if you communicate with him. His exams are also very similar to review and lecture material, and there are rarely trick questions or content that has never shown up before - the high exam averages reflect this. He is happy to reiterate topics and answer questions, and is just a really great guy overall. Please take him if he's available, the other CS professors here don't come close.\r\n\r\nStill, it's only fair to mention some of his downsides as well. Because he's so silly, he sometimes gets sidetracked and starts talking about some random lore, and the day after exams, spends 15 minutes reviewing extra credit drawings from the previous exam. This makes the class much more enjoyable, but if you're purely looking for the highest density of information, Elias tends to be a little bit slower.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2025-05-02T01:49:40.380849Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC125",
-      "review": "Elias is amazing!! I learned a lot in this class, and the class is super chill and interesting. Workload wasn't heavy, and grading is lenient. He also takes the time to discuss different majors you can take with the topic we're learning, and what a typical job might look like for someone going into a certain field (data science, CS, cybersecurity, design, etc.). I found this super helpful. TAKE ELIAS!!",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2025-05-06T14:31:30.785720Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": null,
-      "review": "Another great year with Elias Gonzalez. I took CMSC132 this semester and he was great. Very fun, very good professor. Only four stars because he likes to do this thing on some assignments where a certain percent of the project has to be turned in a few days before the actual deadline, meaning that if you're like me and only look at projects the day they're due, you might accidentally miss 5% of the grade.",
-      "rating": 4,
-      "expected_grade": "",
-      "created": "2025-05-07T12:54:57.995983Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "elias my goat !!!!!\r\n\r\ntl;dr if you have the option to take him, do yourself the favor and do so (be it for 131, 132, etc)\r\n\r\nthere's not much more to be said regarding the actual structure of his class (recorded lectures, good projects, straightforward + thorough project descriptions, open note quizzes, considerate regarding extensions) - it's really well organized as you can probably tell, j want to add he really is as chill of a dude as is written below lol - cracks jokes in lecture, super nice abt considering + answering questions, laid back office hours, j super personable in general (on top of being a fantastic educator). \r\n\r\nclass was certainly challenging throughout, but i think it was for good reasons (tough concepts, problems that tested my understanding of certain topics, etc), rather than contrived requirements or vague expectations. i definitely came out starting to feel like a computer scientist (+ a stronger programmer in general), and would absolutely do it over again given the chance.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2025-06-29T00:25:47.296432Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Best professor. Great at teaching and super understanding. TAs are helpful as well. Lots of practice exams and you will be well prepared for the exam as long as you go to office hours, discussion, and class. Lectures recorded.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2025-11-14T18:46:04.477521Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "amazing professor! Very fair exams and rules",
-      "rating": 5,
-      "expected_grade": "A-",
-      "created": "2025-12-20T20:11:47.542528Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC132",
-      "review": "I took Elias for 131 and 132 and I will say that he is definitely the best introductory CS professor anyone could ask for. I was very scared coming into UMD because I had pretty much no true coding experience (I had not even taken AP CS principles) and I had heard from various planetterp reviews and forums that this course would be difficult if I did not already have at least some background in CS. However, Elias made both of these courses a great experience. He truly cares about his students and takes time to talk about topics such as mental health. He also has a system set up so that there are nearly constant office hours making it very easy to get help with projects or leading up to exams. His lectures were also very engaging. He explained concepts very well (especially for someone with no prior knowledge) and was always very receptive to questions (as I used to ask a lot especially in 132), making sure his answers contained as much depth as possible. In addition to being a great teacher and having a system that makes it easy to get help, he also records lectures, provides a plethora of practice material for midterms and the final, and overall is just a very approachable person. Would definitely recommend.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2025-12-22T05:02:17.089249Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Great professor. really chill guy and good at teaching. posts lecture recordings and slides as well as sample code to help. exams are hard and you have to handwrite code, but that's just what it is in cs. doesn't curve unless you are in between a letter grade then rounds up. 92.9 isn't a 93, but 89.6 is a 90. programming assignments are easy and a great grade booster (25% of grade). They also help with reviewing for exams and quizzes as the material tested with the code is what you're learning in class. Didn't go to office hours until final review, but he was helpful there too. Quizzes are announced and closed note. Labs are unannounced and open note, so go to discussion. Final was super easy compared to the midterms, was about 1.5 times the length of the exam but given double the time. Overall, if you can take him, take him. Easy to get at least an A-, even if you bomb exams. Kinda annoying he doesn't curve, but you shouldn't fail the class even without it, as long as you submit everything and show up to exams.",
-      "rating": 5,
-      "expected_grade": "A",
-      "created": "2025-12-25T17:06:09.270193Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Overall great guy and a chill professor. The class has a ton of work, but he provides so many resources to study. Make sure to review old topics for each exam so your coding stays up to date. he records lectures and is extremely nice.",
-      "rating": 5,
-      "expected_grade": "B+",
-      "created": "2025-12-29T16:47:44.169820Z"
-    },
-    {
-      "professor": "Elias Gonzalez",
-      "course": "CMSC131",
-      "review": "Very kind professor who will always be willing to work with you to help you succeed.",
-      "rating": 5,
-      "expected_grade": "A+",
-      "created": "2026-04-09T22:01:40.125578Z"
+      "course": "MATH410",
+      "count": 1,
+      "avg": 5
     }
   ],
-  "name": "Elias Gonzalez",
-  "slug": "gonzalez_elias"
+  "recent_reviews": [
+    {
+      "created": "2026-02-28",
+      "course": "MATH140",
+      "rating": 3,
+      "review": "Exams are a little hard, he is very nice but he doesn't seem to care about teaching."
+    },
+    {
+      "created": "2025-12-16",
+      "course": "MATH140",
+      "rating": 5,
+      "review": "Goat"
+    },
+    {
+      "created": "2025-12-06",
+      "course": "MATH140",
+      "rating": 4,
+      "review": "Average professor, good notes and tried to explain things to the best of his ability. Pretty fair with grading. Not a big fan of the loud breathing into the microphone during lecture but other than that pretty solid."
+    },
+    {
+      "created": "2025-05-25",
+      "course": "MATH432",
+      "rating": 2,
+      "review": "I took math432 with chadwick in fall2024 and math405 with him in spring2024. The positives about Chadwick are that he is very nice, and does seem to care about teaching. However, he teaches incredibly slow for a 400-level math class. In math405, we barely did half of what is expected, and in math432 we did everything on such a surface level you basically learn nothing. Also, Chadwick seems to always choose the worst textbook imaginable. In 405, we used Linear Algebra Done Wrong, which is okish, but there are so many other standard books that are better (Hoffman and Kunze, Axler, etc). In 432, we used Essential Topology, which is maybe the worst math textbook I have ever read. It covers standard content of point-set topology at an extremely surface level (it omits countability axioms, separation axioms, paracompactness, metrizability, and every other semi-advanced point-set topology topic), the exercises suck and are just proving theorems from the book (which are usually very easy and do not teach anything), and tries to cover algebraic topology, but does so very poorly. Literally any other textbook on topology I have seen would be much much better (munkres, dugundji, kelley, even something weird like Simmons). Chadwick's course followed this book, which led to point-set topology being glossed over in favor of giving a very surface level treatment of algebraic topology. It would have been much better if Chadwick just taught point-set topology and maybe at the very end did like a week or two on the fundamental group. Homeworks are generally very easy, and consist of just random problems from the textbooks. They take a while to get graded, and oftentimes, material that has not been in homeworks is on exams. Exam problems are generally very easy, but there is a time crunch which sometimes makes it a little hard. Overall, Chadwick is definitely a nice guy, but I don't think he's good at teaching 400-level math courses. He seems to be getting better? so maybe in a couple years he'll be fine, but for now, I would recommend almost anyone else for an upper level math course."
+    },
+    {
+      "created": "2025-05-23",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "I've had Dr. Chad for both MATH141 and 140. After taking him for one full year, I can confidently say that he is a great teacher and might even be the best calc teacher at UMD. For MATH141, to achieve an A, you have to get above a 90 instead of 93. Additionally, he basically gives you 20 points of extra credit because he drops 20 points from the web assigns at the end of the semester. He also lowers the lowest mid term grade to be out of 50. For example, if you got an 80/100 he will turn it into a 40/50. He also drops a quiz and 3 worksheets. He posts all his notes in canvas. His notes are so good that even though I don't pay attention in his class at all, I still understand the notes perfectly. I've literally only studied the day before all the midterm tests and still averaged 95's because his notes are very clear. Additionally, the best part about taking his class is that the practice tests that he gives are almost exactly like the actual test. Overall, I really recommend taking Dr. Chadwick for both 141 and 140 because of how easy it is to get an A and also because of how easy he makes it to understand the concepts. (I did already take calc in high school)."
+    },
+    {
+      "created": "2025-05-18",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "Dr. Chadwick is probably my favorite professor this semester! He was very helpful, and I found his lectures to also be very helpful. He is an understanding professor so I would say communicate. Great professor and you can't go wrong with him. Highly recommend Dr. Chadwick!"
+    },
+    {
+      "created": "2025-05-18",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "OMG this professor has to be the best professor at UMD. I PASSED CALC 1 WITH A C AND PASSING THIS CLASS, CALC 2, WITH AN A. his exams are SUPER EASY. he never gave any jumpscare problems on any exams. ALSO the TAs were amazing. I guarantee that if you go to every discussion, you won't even need to do the homeworks. Quizzes are very easy as well and both the professor and the TA prepares you well for them. A little side note: homework is worth like 2% of your grade so you're better off focusing on the quizzes, worksheets in discussions, and exams as they are worth a lot. If you have to wait on the waitlist, do it."
+    },
+    {
+      "created": "2025-05-14",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "Chadwick is a great teacher and his lectures feel well planned and organized. He is generally very accommodating around making up exams and he will extend homework pretty often if he doesn't cover everything in class. Overall great guy and fair professor."
+    },
+    {
+      "created": "2025-05-14",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "Chadwick is actually fantastic. He goes over examples very slow in class which is very helpful to understanding the subjects. His exams I always found to be super fair, never overcomplicating questions, just testing your basic knowledge. In the off chance he put an unpredictable question on the exam, he would drop hints at it during lecture. My TA, Ben, was great, very knowledgeable and patient when explaining questions. He also drops a lot of things and is very nice with his grade cutoffs. Overall, highly recommend taking him if you have the chance."
+    },
+    {
+      "created": "2025-05-13",
+      "course": "MATH141",
+      "rating": 4,
+      "review": "Good Professor does difficult examples in lecture, and uploads the lecture notes which is insanely helpful. The exams are challenging, but he gives review problems to drive your thoughts on the topics, they are not the same questions with different numbers which I thought was pretty good."
+    },
+    {
+      "created": "2025-04-30",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "Definitely take him if you have the chance! Lectures are very straightforward, always extends homeworks, and very fair exams. I also had TA Lixin and he is great."
+    },
+    {
+      "created": "2025-01-04",
+      "course": "MATH140",
+      "rating": 4,
+      "review": "The tests were difficult, but fair. Chadwick is a good teacher and gave great lectures. However, they could have been better had Chadwick spent more time going over examples rather than rewriting proofs."
+    },
+    {
+      "created": "2024-12-31",
+      "course": "MATH432",
+      "rating": 1,
+      "review": "The exams took a minimum of 2 weeks to get graded each time but usually longer for a reasonable class size. Homework grading was equally bad, so there was no solace in that either. We never got material back in time to study for a following exam. Frankly sometimes the homework for material on a coming exam was due a week after the exam itself, so the exam was completely blind on whether you really understood the material. His explanations often left almost everything to be desired with complex topics being sped through while simple things were fixated on for multiple classes, and material was referenced without ever actually being covered. Multiple times in lecture, he would mention that something was similar to something else, or to imagine it as if \"x\", but we had no basis for that other thing. He didn't pay attention at all to the pre-req's of the class, so if you hadn't previously taken abstract algebra you were pretty much out of luck given his inability to explain the material and the amount of algebra expected in the course on exams and homework. While it was nice that there were not many homeworks it also meant, that given he used basically every textbook problem for homeworks, there was a severe lack of material to review prior to an exam. The exams were a mix of copy pastes of textbook/hw problems, changed up versions of proofs of theorems or simpler but related results, or required you to have a strong intuition for the subject to solve from scratch. The grading on exams was often rather harsh, with a computational mistake easily losing 20% or more of the points of a question. Partial credit would often do a lot of work there, but given I would sometimes get a 60% on a question for vaguely attempting it and an 80% for giving a correct proof with a single mistake, effort never felt particularly rewarding. I also agree he's just too busy with other classes, as when I did go to office hours it was often either very crowded or I felt like he couldn't explain my question at all. Overall he's a very nice person and clearly means well, but is too poor at explaining concepts and helping students develop the needed intuition for a subject like topology to give students room to succeed."
+    },
+    {
+      "created": "2024-12-21",
+      "course": "MATH432",
+      "rating": 1,
+      "review": "Chadwick really shouldn't be teaching these important 400-level courses, at least not yet. MATH432 is the only undergraduate course in topology, an incredibly important field that is used across most of modern mathematics, in addition to being researched in its own right. It's very useful to have a solid foundation in topology, in addition to the insight that it can give about seemingly unrelated things. Chadwick's style is to lecture basically verbatim from the textbook, which already isn't ideal for someone interested in seriously *learning* any topology, beyond what they could do just on their own. This situation was made significantly worse by his choice of textbook, Martin Crossley's \"Essential Topology.\" The book is really really bad. It chooses to skip a lot of important topics in point-set topology (separation axioms, metric spaces, closures and limit points, etc.) and the exercises (which were often homework problems, and sometimes even exam problems) are not very instructive most of the time (show that Z as a subspace of R is Hausdorff, or which of these topologies on {a,b,c,d} are Hausdorff and none of them are lol). It spends a lot of time talking about algebraic topology, but without any real motivation or depth. It's also very hand-wavy about some technical details, and occasionally makes mistakes. These problems bled into the class, and made it essentially useless for anyone who wants to seriously learn topology. (one more annoying thing: he does not publicly correct errors in his lectures). If you attend any other similar 400-level with a decent professor (403/404, 405, 437, 436, 446 etc.) the difference will be clear. As for the course mechanics, he's a slow grader, and there were three exams. He will curve exams when he thinks they're too hard or long, and I think he adjusted cutoffs at the end? He's a nice guy, and mostly available to answer questions (although you may not get a satisfying answer). I bet some of these problems are because he is the chair for the 140/141 sequence, which seems like a lot of work to do alongside teaching something like 432. I'm sure he's a great MATH140 prof, but for upper-level courses, stay away."
+    },
+    {
+      "created": "2024-12-18",
+      "course": "MATH140",
+      "rating": 2,
+      "review": "Note: Chadwick is not the GOAT. Whoever wrote that review was lying. While he\u2019s not a bad professor, I\u2019d rate him as more mid-tier than anything else. Before taking this class, make sure you have a solid understanding of the prerequisite material and are ready to self-study before even attending lectures. Otherwise, you might find yourself confused and lost (it didn\u2019t help that nearly everyone in the class seemed to have taken calculus before). My biggest suggestion for doing well in this class is to study the textbook thoroughly, as the questions are typically recycled from there. That said, the difficulty is more a reflection of MATH 140 being a challenging course overall."
+    },
+    {
+      "created": "2024-12-17",
+      "course": "MATH432",
+      "rating": 1,
+      "review": "horrible professor, do not take him. his lectures are extremely slow and boring, and he consistently fails to provide intuition behind concepts. furthermore, the textbook he chose for the book was awful, oftentimes not giving clear definitions and skipping proofs, and sometimes skipping important concepts needed to fully understand the subject. chadwick also failed to grade assignments in a timely manner, making it hard to prepare for upcoming tests when he hadn't returned the last one. overall, chadwick should really not be teaching 400 level math, and i would recommend no one to take him for an upper level."
+    },
+    {
+      "created": "2024-12-16",
+      "course": "MATH140",
+      "rating": 3,
+      "review": "Chadwick looks like a skinwalker, but overall he is a decent professor. The class is not too difficult. The lectures are pretty straight forward and easy to follow, but my TA could barely speak English which made it difficult. The homework is not hard but it takes forever, the quizzes are super easy, and the exams are the hardest part imo. I got a 59 on my first exam and still ended with a B+ because I locked in. Chadwick is very strict with his grading policy however, so keep that in mind. I ended with an 89.1 and he immediately shut down any conversation of rounding up."
+    },
+    {
+      "created": "2024-12-14",
+      "course": "MATH432",
+      "rating": 2,
+      "review": "For MATH432 he was pretty bad at explaining things and was a very slow grader. He would not provide any real intuition and it was left completely up to the students to figure out how to conceptualize something. The class matched the textbook exactly and exam questions mirrored textbook and homework problems pretty well, so I would generally know what to expect on exams. He did give us a lot of time to do the homework, which I appreciated. Overall, the class was fine, and, while Chadwick isn't a terrible teacher, he isn't a good one either."
+    },
+    {
+      "created": "2024-12-12",
+      "course": "MATH140",
+      "rating": 3,
+      "review": "Very nice and helpful professor. He will stay after class to answer questions, but his lectures are extremely boring. His lectures are extremely slow paced and he takes time to answer every question. We may go over one or two questions the entire class period. I felt that it more beneficial to learn from the lecture notes he uploads than to attend class. The homework tended to be more difficult than exam questions and the examples we went over in class. The mandatory discussions were extremely annoying and the worksheets we completed contained difficult questions that often mixed in things we did not learn. I once asked about this and was told that it was supposed to be prior knowledge. They did end up getting easier as the semester ended as I am pretty sure the TA's talked to him about it but I am not certain. Overall, he was a decent professor and would recommend taking him if you prefer a slower paced class."
+    },
+    {
+      "created": "2024-12-10",
+      "course": "MATH432",
+      "rating": 1,
+      "review": "Chadwick should not be teaching 400 levels. He taught Math432 very differently form previous professors, and the course really suffered for it. He doesn't seem like he wants to be teaching it, and although he's nice, he's far too busy with 140/141 to dedicate any serious time to the course. He returns exams very late (returned exam 2 after we had already taken exam 3, and exam 3 after the end of the semester) but provides helpful feedback. If you have any other option for a 400 level, take anyone else."
+    },
+    {
+      "created": "2024-12-09",
+      "course": "MATH461",
+      "rating": 5,
+      "review": "I took this class over the summer with Chadwick and would definitely recommend it. The exams were super fair and very similar to the homework. Our final was only 1/3 cumulative (might be different during a regular semester) which was nice. We had weekly quizzes and homework that were basically free points. Even on the accelerated pace of a summer course the lectures were super easy to follow and the professor was always more than happy to answer questions. He was such a genuine guy who you could tell actually cared about your learning in the class."
+    },
+    {
+      "created": "2024-12-09",
+      "course": "MATH140",
+      "rating": 5,
+      "review": "Good prof. Not too much homework, but it is a lil bit difficult. Exams are easier. Lectures are straightforward and easy to understand."
+    },
+    {
+      "created": "2024-12-04",
+      "course": "MATH140",
+      "rating": 3,
+      "review": "Decent professor. Uploads lecture notes to elms after lectures. His notes are pretty reflective of the textbook. Worksheets are much more difficult than anything you'll see on exams. Exams are difficult, but webassign problems and previous exams are good study material for exams. Drops 1 quiz, 3 homeworks, and halves your lowest exam grade (if you got a 70/100 it would be a 35/50)."
+    },
+    {
+      "created": "2024-12-04",
+      "course": "MATH140",
+      "rating": 5,
+      "review": "Dr. Chadwick is a really fair MATH140 professor. His lectures consist of him writing neat notes for you to copy down for each chapter. He speaks well and is easy to understand, however sometimes he doesn't explicitly answer class questions. Make sure to pay attention in lecture as it can be pretty fast paced. His office hours are very helpful, he really gives the time to explain answers and concepts. His exams are challenging but that is to be expected. He posts 1-2 practice exams prior which are really similar to the actual exams. Overall, Chadwick is very knowledgeable on MATH140 and I recommend him for this class. The discussions are challenging but that is across the board for all MATH140 sections. My TA was very personable and helpful and gave as much help as he could without giving the answer away. Each discussion has a worksheet that is difficult, but follow directions and work with a group. Break the ice early on in the class and form that group! Also, quizzes are given every so often which are easy. For the latter half of the semester, the TAs review the quiz material before it is handed out which is very helpful. The beginning quizzes are not like that though so study before you get there. The homework is annoying as it takes a long time to complete and is only worth 3% of the grade. Dr. Chadwick will often extend homework if enough people in the class email him prior to the deadline. Dr. Chadwick is great for MATH140. I recommend him."
+    },
+    {
+      "created": "2024-12-03",
+      "course": "MATH140",
+      "rating": 4,
+      "review": "Good prof.. I like the way he writes notes during the lecture so you can see the process. However, he sometimes gives vague answers to questions or doesn't answer them at all. If you have a choice, try to get a TA other than Kaiwen. He's very good at math, but sometimes fails to explain concepts to people with a lesser understanding of math."
+    },
+    {
+      "created": "2024-12-02",
+      "course": "MATH140",
+      "rating": 3,
+      "review": "He uploads the notes for each class which is nice and he gives out practice tests which are very similar to the actual tests. His lectures are very helpful and he is good at explaining things. However, discussion was annoying. We were given worksheets to complete, 5 points for completion and 5 points for accuracy. The worksheets were super hard to do and way off from what we did in class or what was on any of the tests. They webassign homeworks take a really long time to do and they end up being only like 3% of your grade which was really annoying."
+    },
+    {
+      "created": "2024-06-28",
+      "course": "MATH141",
+      "rating": 4,
+      "review": "He uploads his notes and they are pretty neat, so that helps a lot. That being said, his lectures are pretty straightforward, by the book, and monotonous. The worksheets are hard and require a lot of work but the quizzes tend to be fairly easy. It would have been great if he gave more weightage to the webassigns, considering we need to pour so much of our effort into them. The exams are way past the questions done in lectures, but you will be fine if you are good at self-studying. He curves the lowest exam and the TAs were lenient graders, so that is pretty nice."
+    },
+    {
+      "created": "2024-05-16",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "For starters, I would like to mention that I started off with Tim P. Absolute NIGHTMARE. The difference between him and Chaddy is night and day. Chaddy truly is the goat. I would not have been able to pass calc 2 if it weren't for him. He's a really good lecturer and exams are pretty fair. However, he's not the greatest at answering questions in class because he seems to be a little shy. But if you put in the work, you'll really pass. I took very little calculus in high school so taking this class was really rough for me. But I did it! You can do it too! Take Chaddy!"
+    },
+    {
+      "created": "2024-05-12",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "goat. Dr. Chadwick is easily one of the nicest and most caring professors I've ever had. He stays after class to answer questions and is great at explaining topics during office hours, he even stays EXTRA long after class to ensure every student has their question answered. Calc II is not an easy subject so I could see why people could give him low ratings. His exams can be a bit more difficult but his teaching makes up for it. Quizzes aren't bad at all. Homework is homework. TAs are a bit iffy at first but chill. If you're looking for the best professor for Calc II, it's most likely Chadwick, if you're looking for slightly easier exams then a different professor might be better for you. You'll learn a lot with Chadwick. Overall goated guy, w chad"
+    },
+    {
+      "created": "2024-05-07",
+      "course": "MATH141",
+      "rating": 5,
+      "review": "More like Goatwick tbh. He is very understanding and I found his style of teaching to be extremely helpful."
+    }
+  ]
 }
