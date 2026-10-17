@@ -1,0 +1,14 @@
+
+{
+  "manifest_version": 3,
+  "name": "Terp Insight",
+  "version": "1.0.0",
+  "description": "AI-powered professor review summaries",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://planetterp.com/*",
+    "http://localhost:3000/*"
+  ]
+}
