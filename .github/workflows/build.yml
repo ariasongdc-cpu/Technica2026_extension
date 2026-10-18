@@ -1,9 +1,8 @@
-name: Build Extension with Secret
+name: Build and Package Extension
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -12,21 +11,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 1. Injects the GEMINI_API_KEY GitHub Secret into config.js
-      - name: Inject Secret
+      - name: Inject Gemini API Key into config.js
         run: |
-          echo "const CONFIG = { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}' };" > config.js
+          echo "const CONFIG = { GEMINI_API_KEY: \"${{ secrets.GEMINI_API_KEY }}\" };" > config.js
 
-      # 2. Upload with recursive folder matching (/**)
-      - name: Upload Ready Extension
+      - name: Verify font folder exists on runner
+        run: ls -la font/
+
+      - name: Create Extension Zip
+        run: |
+          zip -r terpwhisper-extension.zip manifest.json popup.html popup.js config.js icons/ font/
+
+      - name: Upload Zip Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: TerpWhisper
-          run: zip -r terpwhisper.zip . -x "*.git*" ".github/*" "check.json" "*.py" "*.txt"
-          path: |
-            manifest.json
-            popup.html
-            popup.js
-            config.js
-            fonts/**
-            icons/**
+          name: terpwhisper-extension
+          path: terpwhisper-extension.zip
