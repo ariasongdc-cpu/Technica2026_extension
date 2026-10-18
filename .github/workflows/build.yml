@@ -23,3 +23,10 @@ jobs:
         with:
           name: TerpWhisper
           run: zip -r terpwhisper.zip . -x "*.git*" ".github/*" "check.json" "*.py" "*.txt"
+          path: |
+            manifest.json
+            popup.html
+            popup.js
+            config.js
+            fonts/**
+            icons/**
