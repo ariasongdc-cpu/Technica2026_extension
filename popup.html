@@ -56,10 +56,10 @@
     button {
       background: radial-gradient(
         circle,
-        #e672b0 0%,
+        #dd67a6 0%,
         #a6cf96 90%
       );
-      color: rgb(74, 7, 74);
+      color: rgb(255, 255, 255);
       border: none;
       cursor: pointer;
       font-family: "Gochi Hand";
@@ -74,13 +74,28 @@
       font-size: 16px;
     }
 
+    
     .summary-card {
       display: none;
+      position: relative;
+      isolation: isolate;
       padding: 14px;
-      border-radius: 18px;
+      border-radius: 22px;
       margin-top: 12px;
-      border: 1px solid transparent;
-    }
+
+      /* Frosted glass */
+      background: rgba(255, 255, 255, 0.24);
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+
+      /* Glossy glass edges */
+      border: 1px solid rgba(255, 255, 255, 0.75);
+      box-shadow:
+        0 8px 24px rgba(75, 45, 100, 0.12),
+        inset 0 1.5px 1px rgba(255, 255, 255, 0.9),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.35);
+}
+
 
     .summary-card-initial {
       padding: 10px 14px;
@@ -90,9 +105,10 @@
     }
 
     .summary-card h2 {
-      font-size: 20px;
+      font-size: 19px;
       margin-top: 0;
       margin-bottom: 8px;
+      font-family: "Georgia", serif;
     }
 
     .summary-card p {
@@ -110,49 +126,74 @@
       line-height: 1.5;
     }
 
+    
     .avg {
       background: radial-gradient(
-        circle,
-        #fceef6 0%,
-        #e097be 86%
+        circle at 25% 15%,
+        rgba(255,255,255, 0.7),
+        rgba(230, 99, 171, 0.28) 70%
       );
-      border-color: #1b0a49;
+      border-color: rgba(255, 255, 255, 0.85);
     }
 
     .positive {
       background: radial-gradient(
-        circle,
-        #f8edf3 0%,
-        #d8bbd9 75%
+        circle at 25% 15%,
+        rgba(227, 129, 181, 0.4),
+        rgba(166, 164, 237, 0.35) 75%
       );
-      border-color: #af3b8e;
+      border-color: rgba(255, 255, 255, 0.85);
     }
 
     .negative {
       background: radial-gradient(
-        circle,
-        #f8edf3 0%,
-        #cad1ed 75%
+        circle at 25% 15%,
+        rgba(255, 255, 255, 0.7),
+        rgba(153, 192, 209, 0.40) 75%
       );
-      border-color: #93afe8;
+      border-color: rgba(255, 255, 255, 0.85);
     }
 
     .mixed {
       background: radial-gradient(
-        circle,
-        #f9f4f7 0%,
-        #f6d8bb 75%
+        circle at 25% 15%,
+        rgba(227, 129, 181, 0.4),
+        rgba(222, 183, 138, 0.40) 75%
       );
-      border-color: #f3cfbb;
+      border-color: rgba(255, 255, 255, 0.85);
     }
 
     .greeting {
       background: radial-gradient(
-        circle,
-        #fceef6 0%,
-        #c0a0c0 86%
+        circle at 25% 15%,
+        rgba(255, 255, 255, 0.72),
+        rgba(139, 102, 140, 0.32) 85%
       );
-      border-color: #1b0a49;
+      border-color: rgba(255,255,255, 0.85);
+
+      -webkit-backdrop-filter: blur(18px);
+      backdrop-filter: blur(18px);
+
+      box-shadow:
+        0 8px 24px rgba(75, 45, 100, 0.12),
+        inset 0 1.5px 1px rgba(255, 255, 255, 0.9),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.35);
+    }
+
+    .summary-card h2,
+    .summary-card p,
+    .summary-card-initial h2,
+    .summary-card-initial p {
+      position: relative;
+      z-index: 1;
+    }
+
+    .summary-card:hover {
+      box-shadow:
+        0 12px 28px rgba(75, 45, 100, 0.17),
+        inset 0 1.5px 1px rgba(255, 255, 255, 0.95),
+        inset 0 -1px 1px rgba(255, 255, 255, 0.4);
+      transition: box-shadow 0.25s ease;
     }
 
     #result {
@@ -170,31 +211,23 @@
   <button id="analyze">analyze reviews</button>
 
   <div class="summary-card avg">
-    <h2>⭒ Average Rating</h2>
-    <p id="averageRating">
-      The average rating will appear here.
-    </p>
+    <h2>⭒ Overall Sentiment</h2>
+    <p id="sentimentSummary">Analyzing consensus...</p>
   </div>
 
   <div class="summary-card positive">
-    <h2>⭒ The Good Stuff</h2>
-    <p id="positiveSummary">
-      The positive summary will appear here.
-    </p>
+    <h2>⭒ Key Strengths</h2>
+    <p id="strengthsSummary">Analyzing strengths...</p>
   </div>
-
+    
   <div class="summary-card negative">
-    <h2>⭒ The Not-So-Good Stuff</h2>
-    <p id="negativeSummary">
-      The negative summary will appear here.
-    </p>
+    <h2>⭒ Common Pitfalls & Challenges</h2>
+    <p id="pitfallsSummary">Analyzing challenges...</p>
   </div>
 
   <div class="summary-card mixed">
-    <h2>⭒ The Mixed Info</h2>
-    <p id="mixedSummary">
-      The mixed info will appear here.
-    </p>
+    <h2>⭒ Actionable Advice</h2>
+    <p id="adviceSummary">Analyzing advice...</p>
   </div>
 
   <div class="summary-card-initial greeting">
