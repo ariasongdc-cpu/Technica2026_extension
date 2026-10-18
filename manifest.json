@@ -16,10 +16,11 @@
     "48": "icons/star.png",
     "128": "icons/star.png"
   },
-  "permissions": ["downloads"],
+  "permissions": ["downloads", "storage"],
   "host_permissions": [
     "https://planetterp.com/*",
     "http://localhost:3000/*",
-    "http://127.0.0.1:3000/*"
+    "http://127.0.0.1:3000/*",
+    "https://generativelanguage.googleapis.com/*"
   ]
 }
