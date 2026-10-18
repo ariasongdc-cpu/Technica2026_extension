@@ -1,6 +1,7 @@
 const button = document.getElementById("analyze");
 const nameInput = document.getElementById("professorName");
 const status = document.getElementById("status");
+const GEMINI_MODEL = "gemini-3.8-flash";
 
 button.addEventListener("click", async () => {
   const name = nameInput.value.trim();
@@ -10,14 +11,21 @@ button.addEventListener("click", async () => {
     return;
   }
 
-  // Display cards and hide greeting
+  // 1. Retrieve the Gemini API key
+  const apiKey = await getApiKey();
+  if (!apiKey) {
+    setStatus("Error: GEMINI_API_KEY not found in config.js or storage.");
+    return;
+  }
+
+  // Show summary cards and hide initial greeting
   document.querySelectorAll(".summary-card").forEach((card) => {
     card.style.display = "block";
   });
   const initialCard = document.querySelector(".summary-card-initial");
   if (initialCard) initialCard.style.display = "none";
 
-  setStatus("Fetching reviews from PlanetTerp...");
+  setStatus("Fetching data from PlanetTerp...");
   resetCards();
 
   try {
@@ -26,45 +34,21 @@ button.addEventListener("click", async () => {
       reviews: "true"
     });
 
-    const response = await fetch(
-      `https://planetterp.com/api/v1/professor?${params}`
-    );
-
-    if (!response.ok) {
-      throw new Error(`PlanetTerp error: ${response.statusText || response.status}`);
+    const ptResponse = await fetch(`https://planetterp.com/api/v1/professor?${params}`);
+    if (!ptResponse.ok) {
+      throw new Error(`PlanetTerp error: ${ptResponse.statusText || ptResponse.status}`);
     }
 
-    const data = await response.json();
+    const data = await ptResponse.json();
     if (data.error) throw new Error(data.error);
 
     const cleaned = cleanProfessor(data);
-    setStatus("Generating AI summary with Gemini (approx. 3-5s)...");
+    setStatus("Generating AI summary with Gemini...");
 
-    // Send to local server
-    const saveResponse = await fetch("http://127.0.0.1:3000/save", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(cleaned, null, 2)
-    });
+    // 3. Call Gemini REST API directly (no Python needed)
+    const summaryText = await callGeminiDirectly(cleaned, apiKey);
 
-    if (!saveResponse.ok) {
-      throw new Error(`Server returned HTTP ${saveResponse.status}`);
-    }
-
-    const serverData = await saveResponse.json();
-
-    if (serverData.error) {
-      throw new Error(serverData.error);
-    }
-
-    const summaryText = serverData.summary || "";
-
-    // If Gemini returned an error string instead of a summary
-    if (summaryText.startsWith("Error")) {
-      throw new Error(summaryText);
-    }
-
-    // Populate cards
+    // 4. Fill cards with parsed output
     fillCards(cleaned, summaryText);
     setStatus("Analysis complete!");
   } catch (error) {
@@ -73,6 +57,60 @@ button.addEventListener("click", async () => {
     document.getElementById("sentimentSummary").textContent = `Error: ${error.message}`;
   }
 });
+
+/**
+ * Gets API key from config.js (GitHub Secret) or chrome.storage
+ */
+async function getApiKey() {
+  if (typeof CONFIG !== "undefined" && CONFIG.GEMINI_API_KEY) {
+    return CONFIG.GEMINI_API_KEY.trim();
+  }
+  const storageData = await chrome.storage?.sync?.get(["geminiApiKey"]);
+  return storageData?.geminiApiKey || null;
+}
+
+/**
+ * Calls Google's Gemini REST API directly from the extension
+ */
+async function callGeminiDirectly(cleaned, apiKey) {
+  const reviewsText = cleaned.recent_reviews
+    .map((r) => `[${r.created}] (${r.course}) Rating: ${r.rating}/5 - "${r.review}"`)
+    .join("\n");
+
+  const prompt = `You are an academic advisor assistant at the University of Maryland (UMD).
+Please analyze the following student reviews and metadata for ${cleaned.name}.
+
+Metadata:
+- Average Rating: ${cleaned.average_rating ?? "N/A"}
+- Total Reviews Collected: ${cleaned.review_count}
+
+Student Reviews:
+${reviewsText || "No qualitative reviews available."}
+
+Please provide a concise, structured summary separated by newlines including:
+1. **Overall Sentiment**: General consensus from students.
+2. **Key Strengths**: What professors/courses do particularly well.
+3. **Common Pitfalls / Challenges**: Difficulties, workload concerns, or exams to watch out for.
+4. **Actionable Advice for Students**: Tips for succeeding based on past student feedback.`;
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${apiKey}`;
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: prompt }] }]
+    })
+  });
+
+  if (!response.ok) {
+    const errorBody = await response.json().catch(() => ({}));
+    throw new Error(errorBody.error?.message || `Gemini API error (${response.status})`);
+  }
+
+  const result = await response.json();
+  return result.candidates?.[0]?.content?.parts?.[0]?.text || "";
+}
 
 function setStatus(message) {
   if (status) status.textContent = message;
@@ -103,8 +141,6 @@ function parseGeminiSummary(text) {
   const strengths = getSection("(?:2\\.|#+|\\*\\*).*?Key Strengths", "(?:3\\.|#+|\\*\\*).*?(?:Common Pitfalls|Challenges)");
   const pitfalls  = getSection("(?:3\\.|#+|\\*\\*).*?(?:Common Pitfalls|Challenges)", "(?:4\\.|#+|\\*\\*).*?Actionable Advice");
   const advice    = getSection("(?:4\\.|#+|\\*\\*).*?Actionable Advice", "$");
-
-  // Fallback: if regex missed headers, divide into paragraph blocks
   const blocks = text.split(/\n\s*\n+/).map((b) => b.trim()).filter(Boolean);
 
   return {
@@ -144,7 +180,7 @@ function cleanProfessor(data) {
   const reviews = (data.reviews || []).map((review) => ({
     course: review.course || "Unknown",
     rating: review.rating,
-    created: review.created,
+    created: review.created ? review.created.slice(0, 10) : "",
     review: (review.review || "").replace(/\s+/g, " ").trim()
   }));
 
@@ -170,19 +206,12 @@ function cleanProfessor(data) {
     }))
     .sort((a, b) => b.count - a.count);
 
-  const recentReviews = reviews.slice(0, 30).map((review) => ({
-    created: review.created ? review.created.slice(0, 10) : "",
-    course: review.course,
-    rating: review.rating,
-    review: review.review
-  }));
-
   return {
     name: data.name,
     slug: data.slug,
     average_rating: data.average_rating == null ? null : Math.round(data.average_rating * 100) / 100,
     review_count: reviews.length,
     courses: courses,
-    recent_reviews: recentReviews
+    recent_reviews: reviews.slice(0, 30)
   };
 }
