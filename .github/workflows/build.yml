@@ -21,11 +21,5 @@ jobs:
       - name: Upload Ready Extension
         uses: actions/upload-artifact@v4
         with:
-          name: TerpWhisper-Extension
-          path: |
-            manifest.json
-            popup.html
-            popup.js
-            config.js
-            fonts/**
-            icons/**
+          name: TerpWhisper
+          run: zip -r terpwhisper.zip . -x "*.git*" ".github/*" "check.json" "*.py" "*.txt"
