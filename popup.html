@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terp Insight</title>
+  
   <style>
     @font-face {
       font-family: "Gochi Hand";
@@ -15,7 +16,7 @@
     body {
       font-family: "Gochi Hand";
       font-size: 16px;
-      width: 340px;
+      width: 350px;
       padding: 14px;
       background:
         radial-gradient(
@@ -30,30 +31,141 @@
         );
       color: #160a40;
       border-radius: 24px;
-      overflow: hidden;
+      overflow-x: hidden;
+      margin: 0;
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     h1 {
       color: #b85488;
       font-size: 26px;
       font-family: "Gochi Hand";
+      margin-top: 4px;
+      margin-bottom: 2px;
     }
 
-    input, button {
+    /* Settings Button & Drawer */
+    .icon-btn {
+      background: rgba(255, 255, 255, 0.45);
+      border: 1px solid rgba(228, 114, 180, 0.5);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .icon-btn:hover {
+      background: #dd67a6;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .settings-panel {
+      padding: 10px 12px;
+      border-radius: 14px;
+      margin: 8px 0 10px 0;
+      background: rgba(255, 255, 255, 0.55);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(228, 114, 180, 0.6);
+      box-shadow: 0 4px 12px rgba(75, 45, 100, 0.08);
+    }
+
+    .settings-panel label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #7b2555;
+    }
+
+    .settings-input-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .settings-input-group input {
+      flex: 1;
+      padding: 6px 8px;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .settings-input-group button {
+      padding: 6px 12px;
+      background: #dd67a6;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: "Gochi Hand";
+      font-size: 15px;
+    }
+
+    .key-status-text {
+      margin: 4px 0 0 2px;
+      font-size: 12px;
+      color: #552758;
+      min-height: 14px;
+    }
+
+    /* Mode selector tabs */
+    .mode-toggle {
+      display: flex;
+      gap: 8px;
+      margin: 8px 0;
+    }
+
+    .toggle-btn {
+      flex: 1;
+      padding: 6px 12px;
+      margin: 0;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.45);
+      color: #160a40;
+      border: 1px solid rgba(228, 114, 180, 0.5);
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: "Gochi Hand";
+      transition: all 0.2s ease;
+    }
+
+    .toggle-btn.active {
+      background: #dd67a6;
+      color: #ffffff;
+      border-color: #dd67a6;
+      box-shadow: 0 2px 6px rgba(221, 103, 166, 0.35);
+    }
+
+    input, button#analyze {
       box-sizing: border-box;
       width: 100%;
       padding: 10px;
       margin: 6px 0;
       border-radius: 8px;
-      font-size: 17px;
+      font-size: 16px;
     }
 
     input {
       border: 1px solid #e472b4;
       font-family: "Gochi Hand";
+      background: rgba(255, 255, 255, 0.85);
     }
 
-    button {
+    button#analyze {
       background: radial-gradient(
         circle,
         #dd67a6 0%,
@@ -65,37 +177,27 @@
       font-family: "Gochi Hand";
     }
 
-    .card {
-      background: #efb6d7;
-      color: rgb(55, 8, 51);
-      border-radius: 20px;
-      padding: 16px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      font-size: 16px;
-    }
-
-    
     .summary-card {
       display: none;
       position: relative;
       isolation: isolate;
       padding: 14px;
-      border-radius: 22px;
+      border-radius: 20px;
       margin-top: 12px;
-
-      /* Frosted glass */
       background: rgba(255, 255, 255, 0.24);
       -webkit-backdrop-filter: blur(18px);
       backdrop-filter: blur(18px);
-
-      /* Glossy glass edges */
       border: 1px solid rgba(255, 255, 255, 0.75);
       box-shadow:
         0 8px 24px rgba(75, 45, 100, 0.12),
         inset 0 1.5px 1px rgba(255, 255, 255, 0.9),
         inset 0 -1px 1px rgba(255, 255, 255, 0.35);
-}
+    }
 
+    /* Course dynamic cards display directly */
+    #courseContainer .summary-card {
+      display: block;
+    }
 
     .summary-card-initial {
       padding: 10px 14px;
@@ -105,142 +207,117 @@
     }
 
     .summary-card h2 {
-      font-size: 19px;
+      font-size: 18px;
       margin-top: 0;
       margin-bottom: 8px;
       font-family: "Georgia", serif;
     }
 
     .summary-card p {
-      font-size: 16px;
-      line-height: 1.5;
+      font-size: 15px;
+      line-height: 1.45;
       margin-bottom: 0;
     }
 
-    .summary-card-initial h2 {
-      font-size: 20px;
-    }
-
-    .summary-card-initial p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    
     .avg {
-      background: radial-gradient(
-        circle at 25% 15%,
-        rgba(255,255,255, 0.7),
-        rgba(230, 99, 171, 0.28) 70%
-      );
+      background: radial-gradient(circle at 25% 15%, rgba(255,255,255, 0.7), rgba(230, 99, 171, 0.28) 70%);
       border-color: rgba(255, 255, 255, 0.85);
     }
 
     .positive {
-      background: radial-gradient(
-        circle at 25% 15%,
-        rgba(227, 129, 181, 0.4),
-        rgba(166, 164, 237, 0.35) 75%
-      );
+      background: radial-gradient(circle at 25% 15%, rgba(227, 129, 181, 0.4), rgba(166, 164, 237, 0.35) 75%);
       border-color: rgba(255, 255, 255, 0.85);
     }
 
     .negative {
-      background: radial-gradient(
-        circle at 25% 15%,
-        rgba(255, 255, 255, 0.7),
-        rgba(153, 192, 209, 0.40) 75%
-      );
+      background: radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.7), rgba(153, 192, 209, 0.40) 75%);
       border-color: rgba(255, 255, 255, 0.85);
     }
 
     .mixed {
-      background: radial-gradient(
-        circle at 25% 15%,
-        rgba(227, 129, 181, 0.4),
-        rgba(222, 183, 138, 0.40) 75%
-      );
+      background: radial-gradient(circle at 25% 15%, rgba(227, 129, 181, 0.4), rgba(222, 183, 138, 0.40) 75%);
       border-color: rgba(255, 255, 255, 0.85);
     }
 
     .greeting {
-      background: radial-gradient(
-        circle at 25% 15%,
-        rgba(255, 255, 255, 0.72),
-        rgba(139, 102, 140, 0.32) 85%
-      );
+      background: radial-gradient(circle at 25% 15%, rgba(255, 255, 255, 0.72), rgba(139, 102, 140, 0.32) 85%);
       border-color: rgba(255,255,255, 0.85);
-
       -webkit-backdrop-filter: blur(18px);
       backdrop-filter: blur(18px);
-
-      box-shadow:
-        0 8px 24px rgba(75, 45, 100, 0.12),
-        inset 0 1.5px 1px rgba(255, 255, 255, 0.9),
-        inset 0 -1px 1px rgba(255, 255, 255, 0.35);
     }
 
-    .summary-card h2,
-    .summary-card p,
-    .summary-card-initial h2,
-    .summary-card-initial p {
-      position: relative;
-      z-index: 1;
-    }
-
-    .summary-card:hover {
-      box-shadow:
-        0 12px 28px rgba(75, 45, 100, 0.17),
-        inset 0 1.5px 1px rgba(255, 255, 255, 0.95),
-        inset 0 -1px 1px rgba(255, 255, 255, 0.4);
-      transition: box-shadow 0.25s ease;
-    }
-
-    #result {
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
-      font-size: 14px;
+    #status {
+      font-size: 13px;
+      color: #552758;
+      margin: 4px 2px;
+      min-height: 16px;
     }
   </style>
 </head>
 <body>
-  <h1> ⭒ TerpWhisper</h1>
-  <p>Understand your professor with just a whisper of knowledge.</p>
+  <div class="top-header">
+    <h1> ⭒ TerpWhisper</h1>
+    <button id="settingsBtn" class="icon-btn" title="API Key Settings">⚙️</button>
+  </div>
+  <p style="margin-top: 0; font-size: 14px;">Understand your professors and classes in a whisper.</p>
 
-  <input id="professorName" placeholder="Enter professor's name">
+  <!-- Collapsible API Settings Panel -->
+  <div id="settingsPanel" class="settings-panel hidden">
+    <label for="apiKeyInput">Gemini API Key</label>
+    <div class="settings-input-group">
+      <input 
+        type="password" 
+        id="apiKeyInput" 
+        placeholder="Paste AIzaSy... key" 
+        autocomplete="off" 
+      />
+      <button id="saveKeyBtn">Save</button>
+    </div>
+    <div id="keyStatus" class="key-status-text"></div>
+  </div>
+
+  <div class="mode-toggle">
+    <button type="button" class="toggle-btn active" id="profModeBtn">Professor</button>
+    <button type="button" class="toggle-btn" id="courseModeBtn">Class</button>
+  </div>
+
+  <input id="searchInput" placeholder="Enter professor's name">
   <button id="analyze">analyze reviews</button>
+  <div id="status"></div>
 
-  <div class="summary-card avg">
-    <h2>⭒ Overall Sentiment</h2>
-    <p id="sentimentSummary">Analyzing consensus...</p>
+  <!-- Professor Detailed Cards -->
+  <div id="professorContainer">
+    <div class="summary-card avg">
+      <h2>⭒ Overall Sentiment</h2>
+      <p id="sentimentSummary">Analyzing consensus...</p>
+    </div>
+
+    <div class="summary-card positive">
+      <h2>⭒ Key Strengths</h2>
+      <p id="strengthsSummary">Analyzing strengths...</p>
+    </div>
+      
+    <div class="summary-card negative">
+      <h2>⭒ Common Pitfalls & Challenges</h2>
+      <p id="pitfallsSummary">Analyzing challenges...</p>
+    </div>
+
+    <div class="summary-card mixed">
+      <h2>⭒ Actionable Advice</h2>
+      <p id="adviceSummary">Analyzing advice...</p>
+    </div>
   </div>
 
-  <div class="summary-card positive">
-    <h2>⭒ Key Strengths</h2>
-    <p id="strengthsSummary">Analyzing strengths...</p>
-  </div>
-    
-  <div class="summary-card negative">
-    <h2>⭒ Common Pitfalls & Challenges</h2>
-    <p id="pitfallsSummary">Analyzing challenges...</p>
-  </div>
-
-  <div class="summary-card mixed">
-    <h2>⭒ Actionable Advice</h2>
-    <p id="adviceSummary">Analyzing advice...</p>
-  </div>
+  <!-- Class Professors Dynamic Cards Container -->
+  <div id="courseContainer" style="display: none;"></div>
 
   <div class="summary-card-initial greeting">
     <h2>⭒ How it Works!</h2>
     <p id="howItWorks">
-      Enter a professor's name, click "analyze reviews", and you'll get an accurate summary of the positive, negative, and mixed feedback.
+      Search by a professor's name or class code (e.g., CMSC131), or navigate to any page on PlanetTerp to auto-summarize feedback.
     </p>
   </div>
 
-  <!--
-  <p id="status"></p>
-  <pre id="result"></pre>
-  -->
   <script src="config.js"></script>
   <script src="popup.js"></script>
 </body>

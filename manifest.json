@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TerpWhisper",
   "version": "1.0.0",
-  "description": "AI-powered professor review summaries",
+  "description": "AI-powered professor and course review summaries",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -16,7 +16,12 @@
     "48": "icons/star.png",
     "128": "icons/star.png"
   },
-  "permissions": ["downloads", "storage"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads",
+    "storage"
+  ],
   "host_permissions": [
     "https://planetterp.com/*",
     "http://localhost:3000/*",
