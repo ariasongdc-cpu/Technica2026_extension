@@ -7,8 +7,39 @@ const profContainer = document.getElementById("professorContainer");
 const courseContainer = document.getElementById("courseContainer");
 const initialGreeting = document.querySelector(".summary-card-initial");
 
+// Settings Drawer Elements
+const settingsBtn = document.getElementById("settingsBtn");
+const settingsPanel = document.getElementById("settingsPanel");
+const apiKeyInput = document.getElementById("apiKeyInput");
+const saveKeyBtn = document.getElementById("saveKeyBtn");
+const keyStatus = document.getElementById("keyStatus");
+
 const GEMINI_MODEL = "gemini-3.8-flash";
 let currentMode = "professor"; // "professor" | "course"
+
+// Settings Drawer Interactions
+settingsBtn?.addEventListener("click", () => {
+  settingsPanel.classList.toggle("hidden");
+});
+
+saveKeyBtn?.addEventListener("click", async () => {
+  const key = apiKeyInput.value.trim();
+  if (!key) {
+    await chrome.storage?.sync?.remove(["geminiApiKey"]);
+    keyStatus.textContent = "API key cleared.";
+    keyStatus.style.color = "#7b2555";
+    return;
+  }
+
+  await chrome.storage?.sync?.set({ geminiApiKey: key });
+  keyStatus.textContent = "✓ API key saved!";
+  keyStatus.style.color = "#2e7d32";
+
+  setTimeout(() => {
+    settingsPanel.classList.add("hidden");
+    keyStatus.textContent = "";
+  }, 1000);
+});
 
 // Mode tab selection
 profModeBtn.addEventListener("click", () => setMode("professor"));
@@ -48,8 +79,14 @@ analyzeBtn.addEventListener("click", () => {
   }
 });
 
-// Auto-detection on page load
+// Auto-detection & Key pre-population on page load
 document.addEventListener("DOMContentLoaded", async () => {
+  // Pre-fill key input if one was already stored
+  const existingKey = await getApiKey();
+  if (existingKey) {
+    apiKeyInput.value = existingKey;
+  }
+
   try {
     const detected = await detectFromActiveTab();
     if (detected) {
@@ -113,7 +150,8 @@ async function detectFromActiveTab() {
 async function runCourseAnalysis(courseQuery) {
   const apiKey = await getApiKey();
   if (!apiKey) {
-    setStatus("Error: GEMINI_API_KEY not found in config.js or storage.");
+    settingsPanel?.classList.remove("hidden");
+    setStatus("Please enter your Gemini API key in ⚙️ Settings.");
     return;
   }
 
@@ -143,7 +181,6 @@ async function runCourseAnalysis(courseQuery) {
 }
 
 async function summarizeCourseProfessors(courseData, apiKey) {
-  // Group reviews by professor
   const profReviews = {};
   for (const prof of courseData.professors || []) {
     profReviews[prof] = [];
@@ -161,7 +198,6 @@ async function summarizeCourseProfessors(courseData, apiKey) {
     return [];
   }
 
-  // Format context for each professor
   let contextText = "";
   for (const prof of allProfNames) {
     const reviews = profReviews[prof] || [];
@@ -169,7 +205,6 @@ async function summarizeCourseProfessors(courseData, apiKey) {
     if (reviews.length === 0) {
       contextText += "No specific student reviews found for this course.\n";
     } else {
-      // Limit to 8 recent reviews per professor to keep token usage efficient
       reviews.slice(0, 8).forEach((r) => {
         contextText += `- [Rating: ${r.rating ?? "N/A"}/5]: "${(r.review || "").replace(/\s+/g, " ").trim()}"\n`;
       });
@@ -207,7 +242,6 @@ Format your output strictly as:
   const result = await response.json();
   const rawText = result.candidates?.[0]?.content?.parts?.[0]?.text || "";
 
-  // Parse output blocks
   const blocks = rawText.split(/###\s*/).filter(Boolean);
   const parsed = [];
   for (const block of blocks) {
@@ -224,7 +258,6 @@ Format your output strictly as:
 function renderCourseCards(courseData, summaries) {
   courseContainer.innerHTML = "";
 
-  // 1. Course overview card
   const headerCard = document.createElement("div");
   headerCard.className = "summary-card avg";
   headerCard.innerHTML = `
@@ -234,7 +267,6 @@ function renderCourseCards(courseData, summaries) {
   `;
   courseContainer.appendChild(headerCard);
 
-  // 2. Professor summary cards
   const cardStyles = ["positive", "mixed", "avg", "negative"];
 
   if (summaries.length === 0) {
@@ -262,7 +294,8 @@ function renderCourseCards(courseData, summaries) {
 async function runProfessorAnalysis(name) {
   const apiKey = await getApiKey();
   if (!apiKey) {
-    setStatus("Error: GEMINI_API_KEY not found in config.js or storage.");
+    settingsPanel?.classList.remove("hidden");
+    setStatus("Please enter your Gemini API key in ⚙️ Settings.");
     return;
   }
 
@@ -333,11 +366,16 @@ Please provide a concise, structured summary separated by newlines including:
    HELPERS & UI UTILITIES
    ======================================================== */
 async function getApiKey() {
-  if (typeof CONFIG !== "undefined" && CONFIG.GEMINI_API_KEY) {
+  // 1. Prioritize user's saved key in chrome.storage
+  const storageData = await chrome.storage?.sync?.get(["geminiApiKey"]);
+  if (storageData?.geminiApiKey && storageData.geminiApiKey.trim()) {
+    return storageData.geminiApiKey.trim();
+  }
+  // 2. Fall back to config.js if present
+  if (typeof CONFIG !== "undefined" && CONFIG.GEMINI_API_KEY && CONFIG.GEMINI_API_KEY.trim()) {
     return CONFIG.GEMINI_API_KEY.trim();
   }
-  const storageData = await chrome.storage?.sync?.get(["geminiApiKey"]);
-  return storageData?.geminiApiKey || null;
+  return null;
 }
 
 function setStatus(msg) {

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Terp Insight</title>
+  
   <style>
     @font-face {
       font-family: "Gochi Hand";
@@ -31,6 +32,13 @@
       color: #160a40;
       border-radius: 24px;
       overflow-x: hidden;
+      margin: 0;
+    }
+
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     h1 {
@@ -38,7 +46,80 @@
       font-size: 26px;
       font-family: "Gochi Hand";
       margin-top: 4px;
-      margin-bottom: 6px;
+      margin-bottom: 2px;
+    }
+
+    /* Settings Button & Drawer */
+    .icon-btn {
+      background: rgba(255, 255, 255, 0.45);
+      border: 1px solid rgba(228, 114, 180, 0.5);
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .icon-btn:hover {
+      background: #dd67a6;
+      transform: scale(1.05);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .settings-panel {
+      padding: 10px 12px;
+      border-radius: 14px;
+      margin: 8px 0 10px 0;
+      background: rgba(255, 255, 255, 0.55);
+      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(228, 114, 180, 0.6);
+      box-shadow: 0 4px 12px rgba(75, 45, 100, 0.08);
+    }
+
+    .settings-panel label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: #7b2555;
+    }
+
+    .settings-input-group {
+      display: flex;
+      gap: 6px;
+    }
+
+    .settings-input-group input {
+      flex: 1;
+      padding: 6px 8px;
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .settings-input-group button {
+      padding: 6px 12px;
+      background: #dd67a6;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: "Gochi Hand";
+      font-size: 15px;
+    }
+
+    .key-status-text {
+      margin: 4px 0 0 2px;
+      font-size: 12px;
+      color: #552758;
+      min-height: 14px;
     }
 
     /* Mode selector tabs */
@@ -174,8 +255,26 @@
   </style>
 </head>
 <body>
-  <h1> ⭒ TerpWhisper</h1>
+  <div class="top-header">
+    <h1> ⭒ TerpWhisper</h1>
+    <button id="settingsBtn" class="icon-btn" title="API Key Settings">⚙️</button>
+  </div>
   <p style="margin-top: 0; font-size: 14px;">Understand your professors and classes in a whisper.</p>
+
+  <!-- Collapsible API Settings Panel -->
+  <div id="settingsPanel" class="settings-panel hidden">
+    <label for="apiKeyInput">Gemini API Key</label>
+    <div class="settings-input-group">
+      <input 
+        type="password" 
+        id="apiKeyInput" 
+        placeholder="Paste AIzaSy... key" 
+        autocomplete="off" 
+      />
+      <button id="saveKeyBtn">Save</button>
+    </div>
+    <div id="keyStatus" class="key-status-text"></div>
+  </div>
 
   <div class="mode-toggle">
     <button type="button" class="toggle-btn active" id="profModeBtn">Professor</button>
