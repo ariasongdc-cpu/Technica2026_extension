@@ -12,12 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Injects the GEMINI_API_KEY GitHub Secret into config.js
+      # 1. Injects the GEMINI_API_KEY GitHub Secret into config.js
       - name: Inject Secret
         run: |
           echo "const CONFIG = { GEMINI_API_KEY: '${{ secrets.GEMINI_API_KEY }}' };" > config.js
 
-      # Packages the extension as a ready-to-load ZIP artifact
+      # 2. Upload with recursive folder matching (/**)
       - name: Upload Ready Extension
         uses: actions/upload-artifact@v4
         with:
@@ -27,5 +27,5 @@ jobs:
             popup.html
             popup.js
             config.js
-            fonts/
-            icons/
+            fonts/**
+            icons/**

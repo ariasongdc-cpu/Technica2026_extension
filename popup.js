@@ -3,14 +3,79 @@ const nameInput = document.getElementById("professorName");
 const status = document.getElementById("status");
 const GEMINI_MODEL = "gemini-3.8-flash";
 
-button.addEventListener("click", async () => {
+// Trigger analysis on button click
+button.addEventListener("click", () => {
   const name = nameInput.value.trim();
-
   if (!name) {
     setStatus("Please enter a professor's name.");
     return;
   }
+  runAnalysis(name);
+});
 
+// Automatically check if the active tab is on PlanetTerp when popup opens
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const detectedName = await detectProfessorFromActiveTab();
+    if (detectedName) {
+      nameInput.value = detectedName;
+      setStatus(`Detected: ${detectedName}. Running analysis...`);
+      runAnalysis(detectedName);
+    }
+  } catch (err) {
+    console.debug("Auto-detection skipped:", err);
+  }
+});
+
+/**
+ * Checks the active tab and extracts the professor's name if on PlanetTerp
+ */
+async function detectProfessorFromActiveTab() {
+  if (!chrome.tabs || !chrome.tabs.query) return null;
+
+  const [activeTab] = await chrome.tabs.query({ active: true, currentWindow: true });
+  if (!activeTab || !activeTab.url) return null;
+
+  // Check if we are on a PlanetTerp professor page: e.g. https://planetterp.com/professor/Larry_Herman
+  const professorUrlPattern = /^https?:\/\/(?:www\.)?planetterp\.com\/professor\/([^/?#]+)/i;
+  const match = activeTab.url.match(professorUrlPattern);
+
+  if (!match) return null;
+
+  // 1. Try reading the professor's name directly from the page DOM (h1 header)
+  try {
+    if (chrome.scripting) {
+      const injectionResults = await chrome.scripting.executeScript({
+        target: { tabId: activeTab.id },
+        func: () => {
+          const h1 = document.querySelector("h1");
+          if (h1 && h1.innerText.trim()) {
+            return h1.innerText.trim();
+          }
+          // Fallback to title tag if h1 isn't available
+          if (document.title) {
+            return document.title.split(/[|\-]/)[0].trim();
+          }
+          return null;
+        }
+      });
+
+      const extractedName = injectionResults?.[0]?.result;
+      if (extractedName) return extractedName;
+    }
+  } catch (e) {
+    console.warn("Script injection failed, using URL fallback:", e);
+  }
+
+  // 2. Fallback: Parse the slug from the URL (e.g., "Larry_Herman" -> "Larry Herman")
+  const slug = match[1];
+  return decodeURIComponent(slug).replace(/_/g, " ").trim();
+}
+
+/**
+ * Main review fetching and Gemini analysis pipeline
+ */
+async function runAnalysis(name) {
   // 1. Retrieve the Gemini API key
   const apiKey = await getApiKey();
   if (!apiKey) {
@@ -45,10 +110,10 @@ button.addEventListener("click", async () => {
     const cleaned = cleanProfessor(data);
     setStatus("Generating AI summary with Gemini...");
 
-    // 3. Call Gemini REST API directly (no Python needed)
+    // 2. Call Gemini REST API directly
     const summaryText = await callGeminiDirectly(cleaned, apiKey);
 
-    // 4. Fill cards with parsed output
+    // 3. Fill cards with parsed output
     fillCards(cleaned, summaryText);
     setStatus("Analysis complete!");
   } catch (error) {
@@ -56,7 +121,7 @@ button.addEventListener("click", async () => {
     setStatus(`Error: ${error.message}`);
     document.getElementById("sentimentSummary").textContent = `Error: ${error.message}`;
   }
-});
+}
 
 /**
  * Gets API key from config.js (GitHub Secret) or chrome.storage
